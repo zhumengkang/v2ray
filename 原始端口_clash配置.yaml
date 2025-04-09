@@ -1,0 +1,4910 @@
+allow-lan: true
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 114.114.114.114
+  nameserver:
+  - https://doh.pub/dns-query
+proxies:
+- name: (CA) "Amazon.com-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: f2fccb9e-67e0-4606-ae77-732b6558e79d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /35.182.7.190-80
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Oracle Corporation-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c92837cf-4547-40ca-8548-ca92f91a38bf
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /192.18.159.164-36545
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) G-Core Labs S.A.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 81328cdc-e276-4f8d-b13a-fec78f9aeff3
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /92.223.2.37-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) AEZA INTERNATIONAL LTD-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: fd9457a6-b7d9-4398-9a01-f8c097dbbee5
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /85.192.42.127-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Keminet SHPK-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: f1d7e010-0155-43af-84ae-5205bb9a3650
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.171.152.220-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) Oracle Corporation-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5603b4a5-68c8-4b48-a750-82c3b7311a46
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /132.226.163.224-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) OVH SAS-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: db936e70-a74a-4783-9272-cce1720ab1be
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /51.222.156.8-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Oracle Corporation-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e35cf026-85c6-4c28-ba10-a9fe2e5ec11b
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /129.151.128.114-34834
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Amazon.com-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4cbaf5a2-1a15-4d00-baa6-6b3358b8af82
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /15.157.7.168-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) FIRST SERVER LIMITED-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: afb4d67e-2c45-41d3-8d56-8a497c798956
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /193.239.160.45-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Amanah Tech Inc.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ae08cfc5-6cb9-4f5f-83f5-a4e814cb52cd
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.113.188.113-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) OVH SAS-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 713a4d56-c0d5-4aae-bcbc-03ba36175086
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /51.222.24.214-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) UltraNET Ltd-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 798f587a-4b87-41ab-bbda-75ada6e3ddbf
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /77.77.27.87-26308
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) AEZA INTERNATIONAL LTD-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: dc36bc69-54eb-4c81-8a6a-b963fc381904
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /45.138.74.188-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Amanah Tech Inc.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e7517c73-c7bc-4138-9008-1e989757ebe5
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /38.113.188.103-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Belcloud LTD-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 88bb7512-e68a-40e4-b3e3-7bdb9f9a9e3b
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /185.177.59.147-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Kamatera-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 3ced804c-6c37-43a3-92d5-0ac806089696
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.98.215.83-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) AEZA INTERNATIONAL LTD-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 34466477-993f-4adf-8b91-73bafdf3d261
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /147.45.41.139-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Hohl IT e.U.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 52aaafdb-8796-4124-9265-3c4e36e56a7c
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /94.177.8.6-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 871c8627-5339-44d7-b428-c91ed1140341
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /125.7.24.251-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Vivacom Bulgaria EAD-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: c2704b27-4a42-4d0e-a14d-089643880459
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /158.58.237.156-10809
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Hohl IT e.U.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 2c52d645-9f56-4815-8dd0-8a651cd8a5d8
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /94.177.8.21-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) M247 Europe SRL-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 3cb46f7a-3573-4fc5-acf4-5a8fd0398e0a
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /176.97.78.80-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) WEB LLC-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6c00717e-8cbf-4044-b291-8d149933ebaf
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /2.56.206.125-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) RETN AM Limited Liability Company-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 9d12e7df-f95d-4b22-ad8c-514f94a21241
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.45.214.58-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) EDIS GmbH-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5eee4d9a-e85f-405a-9086-d19b607364bd
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.153.125.245-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) DA International Group Ltd.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 4a7abb6c-56aa-4cc8-b29b-9deb2be878ba
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /78.128.127.89-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) "The Constant Company-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ff1ccee0-e7c4-420f-aa9d-132077931543
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.238.108.127-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "DigitalOcean-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 2cd0e0e9-97e5-43df-a309-59e5c54a3b6b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /138.197.152.31-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "DigitalOcean-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: aaf58a25-edf5-4601-8357-1ce796c355b2
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /209.38.27.6-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Corporation-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 99ff7282-59a3-43b1-9d78-504b21e89a50
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /192.9.180.162-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) Oracle Corporation-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 199092f4-0345-4acd-888d-9f7d4fb6d2b4
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /132.226.163.224-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) M247 Europe SRL-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 07f84e4a-14bc-451b-9a26-9f45e840f340
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.11.201-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Kaopu Cloud HK Limited-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 2393e091-5fa5-4d43-b513-badae2a53ffb
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.54.9.186-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "DigitalOcean-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a89e1c99-1dd4-490e-8da4-fd7b1b1ee9fb
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /138.197.152.31-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) G-Core Labs S.A.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 9789f5bd-1c7b-40ee-8871-86b0071da1e4
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /92.223.2.37-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Contabo Asia Private Limited-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e2a1e2b5-35e4-4902-80ff-57d7c310fa80
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /154.26.155.98-24726
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 63a89881-cf2a-4aad-a13f-e0f310e5fa5f
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /5.44.42.95-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) OVH SAS-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: c19b8ba7-fa09-4b50-ad1f-729126c46c4c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.99.236.163-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Kaopu Cloud HK Limited-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: efbb0b90-2f94-45cf-9cda-f6e06462150a
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /38.54.9.186-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Hohl IT e.U.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 4fc371d6-5a58-4b67-9a61-ba603f4dc026
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /94.177.8.8-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Datacamp Limited-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6dc99ccb-0173-43ec-a835-31f1265e9ac0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /104.234.240.114-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Corporation-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: d0b35c86-6dff-42df-b532-9f0e988fabe3
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /152.67.101.72-23010
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) WEB LLC-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 6c8027bf-7911-4bfb-8c29-118580887c80
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /2.56.204.183-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Belcloud LTD-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5954ce1e-d4b8-4983-8816-614eb9c0f65c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.37.214.60-18836
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 8830c145-cf85-48ba-b551-02e88d877d05
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /194.156.103.58-41210
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Microsoft Corporation-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 219040e7-89fa-47b0-8841-b66b22be5e73
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.220.29.122-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) FIRST SERVER LIMITED-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 8c655f99-fa51-435d-a7db-1062103dc931
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.232.170.30-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) OVH SAS-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e11c9df0-f339-479e-8299-ea41275ada99
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /51.222.136.86-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Corporation-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 494ccf13-c5a4-40cb-9a5e-6692e22202cb
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /152.67.101.72-23010
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) Oracle Corporation-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: b6dde4a3-6f4c-4255-87e1-fa63136fce6c
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /168.138.141.235-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Amanah Tech Inc.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 4160e43b-3bd1-4ec1-b28b-94216ebc9cb4
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.113.188.116-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ITGLOBAL COM DMCC-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: c2818561-0705-410f-ad6f-c89805918c15
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /185.209.49.17-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) G-Core Labs S.A.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: bbcf9298-813c-4613-888a-24228b4110e1
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /217.195.200.52-80
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Oracle Corporation-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e760ee53-f79a-41fd-bd4a-cd86eab35d13
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /192.18.150.121-27620
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) Gigared S.A.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 48c428f7-5f1c-4998-96cf-5dcac4bdbbbf
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /190.183.61.62-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "The Constant Company-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fb117e65-ea65-48b1-9884-efaa38e25efc
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /45.77.236.204-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) M247 Europe SRL-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 292eeb65-ea52-4009-a6d7-b45e90eda2a0
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /38.180.2.122-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Oracle Corporation-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: c582fee5-ca47-4e9f-8b37-51318dbc30f4
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /139.185.39.237-48008
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Oracle Corporation-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 7f712e7b-038e-4fa7-a0d7-8df5e583c1ed
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.123.84.1-51132
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) PDR-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 902e0d5a-e0cf-4d6f-ab1c-f100fcfeb663
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /216.10.243.159-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) GREEN FLOID LLC-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: d8d29c4b-6d54-460c-86f2-27d9ded2ad85
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /185.82.218.224-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) M247 Europe SRL-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 0e9328e9-4641-41f9-91a5-da3d15e1efdb
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.79.9-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Amazon.com-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b9da6f13-4cd7-4ec6-ad30-cf2f85e1da45
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /35.183.163.195-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Melbikomas UAB-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a557c5c0-eb92-4e3f-ad55-56c2afcaf917
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /213.183.63.68-36651
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) UltraNET Ltd-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b26c22c5-ebba-46c3-869f-56a7eb9c123b
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /77.77.35.161-39013
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "DigitalOcean-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 31532499-4511-4657-ae33-f2ab89ea80cc
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /209.38.16.180-4002
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) M247 Europe SRL-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: dc7552b3-c3d5-4c64-b26b-4ad4ec2aaf73
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.136.198.107-23291
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) UltraNET Ltd-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 6041a343-f18f-45d4-9245-e1dae8519744
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.149.152.219-17849
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: bab30cf3-5acc-48e6-84bd-eeb0d1183e3b
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.98.207.58-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ITGLOBAL COM DMCC-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: eb8635e1-f074-467f-b848-b8fa061c173a
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.209.49.17-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Akamai Technologies-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 33364897-c496-46d8-acc9-9f5163101578
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.105.11.67-15223
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Server Cloud Canada Inc-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: bccb9d0a-faee-4922-9a19-e056953fc019
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /199.48.102.83-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Contabo Asia Private Limited-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 3b3e7e55-a343-40ce-a254-1f7793465cfc
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /154.26.155.98-24726
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) Google LLC-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 678bd1be-cca2-4bac-ac01-9bd4684cc2fd
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /34.22.190.30-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Oracle Corporation-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: fbb46bee-1b93-4d00-8dfd-86a7432acebd
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /192.18.159.164-36545
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Keminet SHPK-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b8decd11-fb50-467e-90a3-31c46d7bbf40
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /31.171.152.215-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Albanian Hosting SH.P.K.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 89c4bdcb-faee-46c0-8872-b3644a088ed1
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.167.234.131-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Server Cloud Canada Inc-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 2ebd4cb5-cc31-4e4e-84c3-6a6f25066b23
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /199.48.102.83-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) GREEN FLOID LLC-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 1a7dfce5-f557-4c57-8f13-326de0dc5ae6
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.82.218.224-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e43b6a53-352f-42b0-aa42-a8858c76eb9d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /5.44.42.108-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Datacamp Limited-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: de5e2063-2a25-41a1-9a83-0b4d5f5a3022
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /104.234.240.179-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Melbikomas UAB-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: d302c522-f220-4c3e-9c59-b8349bc59936
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.183.63.68-36651
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Zenlayer Inc-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e7b31845-17d8-4023-ba51-ae1294c7adcc
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /181.215.205.141-8081
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) BlueVPS OU-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 981770f2-eb7f-4176-96f4-9e776d85ebac
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /45.86.228.104-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Kaopu Cloud HK Limited-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 09f4197d-18fd-409f-bbca-49fdc4b18edd
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.54.9.186-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 38f3b0cf-13b1-4b35-aff4-eca390a35f1b
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.83.143.35-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) WEB LLC-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 27ce1926-afd0-4821-9949-bad49e3c24d5
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /2.56.205.182-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Server Cloud Canada Inc-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: b3c68994-d9fe-4c70-bcc0-33546fa92d89
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /199.48.102.83-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) M247 Europe SRL-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 31edf764-6313-4262-a868-52c7e246075d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.78.255-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: ec91cef0-6b7e-4ae0-b18c-49d145dd9dd5
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /152.32.181.246-44070
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) M247 Europe SRL-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5de187c1-6ee5-446f-8ab7-9a528fd2ad78
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.136.198.107-23291
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "Amazon.com-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 2b1c1a3b-4cc3-479d-a847-1741d3d619f1
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /3.24.174.233-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "Amazon.com-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 5ce47fa0-2948-4215-8453-91ec2a91bf40
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /54.79.133.41-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Akamai Technologies-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: c8eb0c9e-088f-417b-87fd-211eae8eacd7
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /172.105.26.112-2443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) GREEN FLOID LLC-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 7db927bc-4f8a-4ba9-b486-be5a53288fa7
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /91.215.153.85-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ITGLOBAL COM DMCC-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6fc4cb5f-1c99-45dc-98b9-0ca3842b28fe
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.209.49.17-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Cooptel Coop de Telecommunication-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 3ceb6afd-2b99-408d-b705-e10c43e0e87e
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /198.168.101.245-31460
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5697328f-3f6f-48c8-92f7-623fef075708
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /147.45.116.61-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) Gigared S.A.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: e4d0f56d-9d84-4775-85a7-5ff90bb703df
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /190.183.61.62-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "DigitalOcean-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 758e88fd-ac72-4b6c-b867-2b7ee65976a2
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /138.197.152.31-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Datacamp Limited-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: fb1ec8f8-6aa6-42bf-9868-bf915a59836b
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /104.234.240.179-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) Gigared S.A.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 40a191c0-f984-4d9c-b4d2-8a678c4d31e8
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /190.183.61.62-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) FIRST SERVER LIMITED-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 0b164f59-b102-4e6d-8a82-6093d19e5272
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.239.160.45-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) eStruxture Data Centers Inc.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 014f2bf7-66a9-4cda-ab99-8979c446fa91
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /38.180.127.82-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) ZGX PTY LTD-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e4038f55-5339-4b5d-8128-80068b09f0b3
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.65.140.115-12224
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 969f82ad-a832-49ae-9997-e42ca4c52e16
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.21.252.221-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) G-Core Labs S.A.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: e3d5e34a-c195-4855-9b5c-0ee81720e737
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.195.200.138-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Contabo Asia Private Limited-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 1282ce6d-7318-4ef8-973e-e94ad42fcdf3
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /154.26.155.98-24726
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) IT7 Networks Inc-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 8d66e6f3-89bf-4686-8ca9-f9b8527bde50
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.93.32.131-23077
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) EDIS GmbH-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a44884a6-d908-41d4-93fa-834300d7807b
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /45.153.125.245-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Datacamp Limited-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 06db4c0e-0be3-4aa5-8caa-04273632e75c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /212.81.47.154-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) BitCommand LLC-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 87cd64d8-9281-457a-99e2-92b3ec9b360a
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.197.97.207-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) DA International Group Ltd.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 39f9706b-5dd0-437b-8f34-fb61d3cbdfaa
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /78.128.127.89-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Kamatera-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: ee06e7eb-a702-4ce0-a6e9-49929ec25cd0
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /103.98.215.83-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) iiNet Limited-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 464e55b3-2122-4b1a-8c86-ce273dc66b24
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /180.200.129.116-37215
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) IT7 Networks Inc-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 436b32c3-d8ff-4d9d-8284-2f8d8505498a
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.93.32.131-23077
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "The Constant Company-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: d277a5f4-1d03-4ef3-a63c-ff4edb176fcc
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /149.28.162.204-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Datacamp Limited-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 0c9696cb-47fc-4b89-88f9-79517279c369
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /212.81.47.154-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) M247 Europe SRL-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 202989bd-b3ed-4c26-8ae6-a18aa6e47abb
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /89.31.120.79-56531
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Schokker IT B.V.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fbddba39-5862-46bb-858a-bf0446341ebc
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /185.155.220.64-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Melbikomas UAB-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: fcbb0ab3-42ac-4a3c-bfe5-dea7ee337a94
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.183.63.71-53811
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) BitCommand LLC-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fb0c1fea-7782-4828-9bc7-579aadfdb7db
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /217.197.97.207-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Zenlayer Inc-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 7a74e5bc-1607-4c3e-bbfb-2c3ed0bba90f
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /37.202.222.182-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "DigitalOcean-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 713ad09e-80a0-4708-b892-814b89888a54
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /209.38.16.180-4002
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) TimeWeb Ltd.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 9a678bb7-37c0-4f62-81e0-0413ed549d18
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /82.97.247.226-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 81171734-e619-4ab2-8fcd-397642853e1c
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.21.252.221-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: c4130434-312d-446b-abb8-07dedae07bf9
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.127.181.253-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) BlueVPS OU-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: dbc30183-0bda-4738-b087-9b37749b4e83
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.86.228.104-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) "BrainStorm Network-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ca439938-dffc-4e1d-b46e-e987ef899535
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.40.212.216-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "Amazon.com-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: e631553d-1edf-4869-ae5c-d5877d7f3523
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /3.24.174.233-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a4d37858-4c26-498d-bfbd-bc7330cfea77
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /185.21.252.221-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) Google LLC-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b2ac5da3-11c6-4fa7-8048-4268edb33a77
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /34.22.190.30-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Albanian Hosting SH.P.K.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 228f48af-4f19-455a-aebb-61a7495419b9
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /103.167.234.131-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: db546aca-fed8-4f35-acd3-65be96cbd641
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /5.44.42.108-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Keminet SHPK-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: cc0e95f1-8ba3-4dbc-a110-b09ec35230b3
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.171.152.216-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Belcloud LTD-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4f076db6-3c5a-4186-843b-3e2b49d3d3b1
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.177.59.147-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Zenlayer Inc-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 8dfc241f-75bc-401d-8ba7-5e67acad34ce
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /98.98.236.58-15608
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: c4e248fd-16f2-4b07-9680-21bf25ec7a5c
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /152.32.181.246-44070
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 25f3ee97-0e2e-4914-ac9c-0c82298b4170
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.127.181.253-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) M247 Europe SRL-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 70f9d56c-7979-4131-a571-7eecb9269996
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /38.180.79.9-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ef01cb5d-4223-41f1-9fd6-6a2de9cdaf7c
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /194.156.103.31-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 08c5e8fc-9c1b-4f94-9b54-0dcb4f19a597
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /95.164.112.53-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) "BrainStorm Network-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: e947ea21-c22a-4862-9446-e9e2a37b1134
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.40.212.216-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) "The Constant Company-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: a528f1cb-fcb2-4f9a-9dd5-6b2761874300
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.238.108.127-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 995b0526-505e-4c1e-bb05-2334868b78d2
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /45.83.143.35-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) Google LLC-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: f6fdd2b2-6294-4d98-9b9b-6de68ff9d35b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /34.22.142.117-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 69f73a58-546c-41c7-a7e9-c0ea3879f405
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /147.45.116.50-24443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) eStruxture Data Centers Inc.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: b7760dc1-0a18-421b-8f03-6e48d949df85
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.127.82-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Cooptel Coop de Telecommunication-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 0419ff57-3b8a-4116-8396-ab424d550d6f
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /198.168.101.245-31460
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) ALEXHOST SRL-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5927f127-f167-4521-b558-30c71fe01921
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.216.68.91-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Cooptel Coop de Telecommunication-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: f8674d2c-081c-437a-b65a-d0c19d19e9b1
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /198.168.101.245-31460
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) iiNet Limited-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 9e0788b0-be93-42c6-8272-d396a6600b66
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /180.200.129.116-37215
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Albanian Hosting SH.P.K.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: bbe3ab06-c8fb-428f-bbbe-3448cb71536b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.167.234.131-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 18dcb02e-07ca-4161-aa82-05d375a32aa3
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.83.143.35-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Datacamp Limited-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 5728e0dd-826f-4ec6-a548-7d89b8358841
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /212.81.47.154-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) G-Core Labs S.A.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 66f942d7-aebf-4dd8-b0e4-4e877ba5b1b0
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.195.200.52-80
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 49dac5fa-704f-44dc-89b8-d20a42c08c60
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /95.164.112.53-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Microsoft Corporation-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: cebb222b-0379-43a9-921f-a070b234422a
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /20.220.29.122-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) iiNet Limited-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 59ed23f6-6fa1-4e2a-8a68-de261e7a845e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /180.200.129.116-37215
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 200028e5-69da-41a0-934f-ebafb6b7b88c
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /147.45.116.61-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7ae4e160-db22-4882-b582-3bb344d8c320
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /172.98.207.58-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) G-Core Labs S.A.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: a9b1ff63-c518-4840-b34e-96b35b7e60b7
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /92.223.2.37-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Microsoft Corporation-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 5dd6d4ec-89a2-4e51-aee1-ef566061caf8
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /20.233.68.69-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) ZGX PTY LTD-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a0486cda-1790-42c3-8f4c-5a77b59f7361
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /103.65.140.115-12224
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "The Constant Company-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ec7cca43-fb0a-4648-804a-9e36a8cc7672
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /149.28.162.204-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) "BrainStorm Network-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: ce1de04a-114a-492f-9fa6-43db56c946e3
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /31.40.212.216-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7b4a9b24-9a38-4611-8faf-e67c99a3ff2f
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /93.185.165.63-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) RETN AM Limited Liability Company-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 2c34cf25-50d1-4dfa-acef-9d7e37d1c70c
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /139.45.214.118-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) PDR-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: ce5ec490-5d1a-4488-be45-c9a9b001fac6
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.10.243.159-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Vivacom Bulgaria EAD-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 28325721-13a2-4259-86ea-232bea1fa3af
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /158.58.237.156-10809
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) RETN AM Limited Liability Company-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 2ed68f87-56c8-4624-9e6a-df5d3b7711c0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.45.214.58-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: fcab358d-bf42-4a7f-8424-15d315bb0713
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /152.32.181.246-44070
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) BitCommand LLC-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 984170cb-bd69-470b-b68c-255c540ab3d0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.197.97.207-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) OVH SAS-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: b1a47d0f-1026-4097-a155-6cf77e0cf120
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.99.236.163-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GNC-Alfa CJSC-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: df3ee82a-45b7-4aaa-9527-089222b02ce2
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /46.19.99.68-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 260ec988-6b54-43ce-91ce-a272cfbe4157
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.185.165.63-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GNC-Alfa CJSC-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: d950560c-edd7-4868-ae07-327f512c4f91
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /46.19.99.68-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) EDIS GmbH-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: d4734358-e82c-49ec-b0c0-6b272dbb7679
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.153.125.245-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Kamatera-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 04dada4c-685f-4f62-b105-64026b78ca15
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.98.215.83-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: eba7ea9d-364a-4696-a003-35edcdcd10dd
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.98.207.58-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) TimeWeb Ltd.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: a428a629-eb5f-470f-84d8-9fde19b80069
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /82.97.247.226-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) IT7 Networks Inc-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 77eeed91-867d-4581-aa8e-21f0b2a40e43
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /172.93.32.131-23077
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Microsoft Corporation-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: fda3da8a-a717-4a25-b6e6-6245dba1c7e0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.233.68.69-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) ALEXHOST SRL-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 0d619274-47c2-44af-9f7f-c86a9621065e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.216.68.91-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 4fe3a835-33c5-4862-b7fe-3b06e02b44b0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /95.164.112.53-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 00191948-8631-46b2-b0d1-095c4c446f53
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /194.156.103.31-8443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 0ed82cbd-3de2-4ca4-ae1b-2dea94103e42
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /125.7.24.251-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Akamai Technologies-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: d7fe601d-c487-425b-b315-6c8797c969e9
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.105.26.112-2443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GNC-Alfa CJSC-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: b3f88bf2-f328-4392-964e-c1665820331b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /46.19.99.68-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) DA International Group Ltd.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 9d6fd9d3-e917-4ed7-b110-48a8ab85f7f5
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /79.124.7.236-444
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) ZGX PTY LTD-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 2ca702bc-ffe1-4c33-8437-160ef063134b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.65.140.115-12224
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: f31ea8b8-23b3-4be4-8c3f-49c78879ff88
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.185.165.63-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) BlueVPS OU-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: f5c7025f-3e8b-42af-bd2a-17e67f93d109
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.86.228.104-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 59323963-2d9e-4dd8-96eb-7f504fdc2ac4
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /93.127.181.253-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) LLC Baxet-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 9e23f5a8-e873-436a-91ee-8672ffbe5773
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.89.230.50-31599
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) ALEXHOST SRL-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 0731e591-17d2-4c76-bc3a-ecb5ce606873
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /185.216.68.91-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Schokker IT B.V.-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 0b5c06f7-a0de-4fed-bc4c-9b091a73fb77
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.155.220.64-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) PDR-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: eb12c6f0-a680-4e7c-a5a4-54589b2dd500
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.10.243.159-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Schokker IT B.V.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 81b511a7-0963-4b79-a9fb-04764be4cf8d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.155.220.64-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) "The Constant Company-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: ef965888-b8c0-43ed-ae86-626c5ac701b4
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /216.238.108.127-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Microsoft Corporation-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 096c2a20-2f88-4620-a9fb-ebab5e5ad734
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.233.68.69-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) TimeWeb Ltd.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 46f9ef64-b90a-4e53-aa88-35563509d33f
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /82.97.247.226-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Vivacom Bulgaria EAD-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 833af792-e011-4da8-9246-296d0d40bae5
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /158.58.237.156-10809
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) OVH SAS-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 293eccb7-d027-4009-9e3b-931caa54bba8
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /139.99.236.163-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) LLC Baxet-[Tls]-[SS]
+  server: isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: bd989092-2c46-427b-9fba-4de1cabe4b45
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: isidomain.web.id
+    path: /45.89.230.50-31599
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 02a63b91-d6eb-4f84-8166-47e15fce7656
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /125.7.24.251-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) LLC Baxet-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: d1a0a1f4-2665-4678-9cc2-45b72eda4453
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.89.230.50-31599
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Microsoft Corporation-[Tls]-[TR]
+  server: isidomain.web.id
+  port: 443
+  type: trojan
+  password: 531f6f2c-ad82-41ee-95bf-e851e65e64ca
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.220.29.122-2053
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) eStruxture Data Centers Inc.-[Tls]-[VL]
+  server: isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e04f4190-35f1-4c16-8619-4f619f99197a
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.127.82-443
+    headers:
+      Host: isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
