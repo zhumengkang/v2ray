@@ -1,0 +1,5751 @@
+allow-lan: true
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 114.114.114.114
+  nameserver:
+  - https://doh.pub/dns-query
+listeners:
+- name: mixed0
+  type: mixed
+  port: 42000
+  proxy: (AE) Oracle Corporation-[Tls]-[SS]
+- name: mixed1
+  type: mixed
+  port: 42001
+  proxy: (BG) UltraNET Ltd-[Tls]-[TR]
+- name: mixed2
+  type: mixed
+  port: 42002
+  proxy: (CA) OVH SAS-[Tls]-[VL]
+- name: mixed3
+  type: mixed
+  port: 42003
+  proxy: (BR) Oracle Corporation-[Tls]-[VL]
+- name: mixed4
+  type: mixed
+  port: 42004
+  proxy: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[TR]
+- name: mixed5
+  type: mixed
+  port: 42005
+  proxy: (CA) OVH SAS-[Tls]-[SS]
+- name: mixed6
+  type: mixed
+  port: 42006
+  proxy: (BE) Google LLC-[Tls]-[VL]
+- name: mixed7
+  type: mixed
+  port: 42007
+  proxy: (AM) WEB LLC-[Tls]-[TR]
+- name: mixed8
+  type: mixed
+  port: 42008
+  proxy: (CA) OVH SAS-[Tls]-[TR]
+- name: mixed9
+  type: mixed
+  port: 42009
+  proxy: (AE) Kaopu Cloud HK Limited-[Tls]-[TR]
+- name: mixed10
+  type: mixed
+  port: 42010
+  proxy: (CA) "Amazon.com-[Tls]-[VL]
+- name: mixed11
+  type: mixed
+  port: 42011
+  proxy: (AE) G-Core Labs S.A.-[Tls]-[SS]
+- name: mixed12
+  type: mixed
+  port: 42012
+  proxy: (CA) Amanah Tech Inc.-[Tls]-[TR]
+- name: mixed13
+  type: mixed
+  port: 42013
+  proxy: (BG) FIRST SERVER LIMITED-[Tls]-[SS]
+- name: mixed14
+  type: mixed
+  port: 42014
+  proxy: (CA) "DigitalOcean-[Tls]-[VL]
+- name: mixed15
+  type: mixed
+  port: 42015
+  proxy: (BG) DA International Group Ltd.-[Tls]-[SS]
+- name: mixed16
+  type: mixed
+  port: 42016
+  proxy: (AU) Oracle Corporation-[Tls]-[SS]
+- name: mixed17
+  type: mixed
+  port: 42017
+  proxy: (BG) GREEN FLOID LLC-[Tls]-[VL]
+- name: mixed18
+  type: mixed
+  port: 42018
+  proxy: (BG) M247 Europe SRL-[Tls]-[VL]
+- name: mixed19
+  type: mixed
+  port: 42019
+  proxy: (BG) UltraNET Ltd-[Tls]-[SS]
+- name: mixed20
+  type: mixed
+  port: 42020
+  proxy: (AT) AEZA INTERNATIONAL LTD-[Tls]-[TR]
+- name: mixed21
+  type: mixed
+  port: 42021
+  proxy: (BG) Melbikomas UAB-[Tls]-[VL]
+- name: mixed22
+  type: mixed
+  port: 42022
+  proxy: (AT) Hohl IT e.U.-[Tls]-[SS]
+- name: mixed23
+  type: mixed
+  port: 42023
+  proxy: (CA) Datacamp Limited-[Tls]-[TR]
+- name: mixed24
+  type: mixed
+  port: 42024
+  proxy: (BG) FIRST SERVER LIMITED-[Tls]-[TR]
+- name: mixed25
+  type: mixed
+  port: 42025
+  proxy: (CA) "Akamai Technologies-[Tls]-[TR]
+- name: mixed26
+  type: mixed
+  port: 42026
+  proxy: (AU) Oracle Corporation-[Tls]-[VL]
+- name: mixed27
+  type: mixed
+  port: 42027
+  proxy: (BG) DA International Group Ltd.-[Tls]-[TR]
+- name: mixed28
+  type: mixed
+  port: 42028
+  proxy: (AT) Hohl IT e.U.-[Tls]-[TR]
+- name: mixed29
+  type: mixed
+  port: 42029
+  proxy: (AM) G-Core Labs S.A.-[Tls]-[VL]
+- name: mixed30
+  type: mixed
+  port: 42030
+  proxy: (BG) UltraNET Ltd-[Tls]-[VL]
+- name: mixed31
+  type: mixed
+  port: 42031
+  proxy: (AT) AEZA INTERNATIONAL LTD-[Tls]-[VL]
+- name: mixed32
+  type: mixed
+  port: 42032
+  proxy: (CA) Datacamp Limited-[Tls]-[VL]
+- name: mixed33
+  type: mixed
+  port: 42033
+  proxy: (AT) Schokker IT B.V.-[Tls]-[SS]
+- name: mixed34
+  type: mixed
+  port: 42034
+  proxy: (BG) Melbikomas UAB-[Tls]-[SS]
+- name: mixed35
+  type: mixed
+  port: 42035
+  proxy: (BG) FIRST SERVER LIMITED-[Tls]-[VL]
+- name: mixed36
+  type: mixed
+  port: 42036
+  proxy: (AU) "Amazon.com-[Tls]-[TR]
+- name: mixed37
+  type: mixed
+  port: 42037
+  proxy: (AT) Hohl IT e.U.-[Tls]-[VL]
+- name: mixed38
+  type: mixed
+  port: 42038
+  proxy: (AE) G-Core Labs S.A.-[Tls]-[TR]
+- name: mixed39
+  type: mixed
+  port: 42039
+  proxy: (AL) Keminet SHPK-[Tls]-[VL]
+- name: mixed40
+  type: mixed
+  port: 42040
+  proxy: (AU) "Amazon.com-[Tls]-[VL]
+- name: mixed41
+  type: mixed
+  port: 42041
+  proxy: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+- name: mixed42
+  type: mixed
+  port: 42042
+  proxy: (CA) "Amazon.com-[Tls]-[TR]
+- name: mixed43
+  type: mixed
+  port: 42043
+  proxy: (AT) AEZA INTERNATIONAL LTD-[Tls]-[SS]
+- name: mixed44
+  type: mixed
+  port: 42044
+  proxy: (CA) BitCommand LLC-[Tls]-[TR]
+- name: mixed45
+  type: mixed
+  port: 42045
+  proxy: (AM) RETN AM Limited Liability Company-[Tls]-[SS]
+- name: mixed46
+  type: mixed
+  port: 42046
+  proxy: (AE) Kaopu Cloud HK Limited-[Tls]-[SS]
+- name: mixed47
+  type: mixed
+  port: 42047
+  proxy: (BR) "The Constant Company-[Tls]-[SS]
+- name: mixed48
+  type: mixed
+  port: 42048
+  proxy: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+- name: mixed49
+  type: mixed
+  port: 42049
+  proxy: (BR) Oracle Corporation-[Tls]-[TR]
+- name: mixed50
+  type: mixed
+  port: 42050
+  proxy: (AR) Gigared S.A.-[Tls]-[TR]
+- name: mixed51
+  type: mixed
+  port: 42051
+  proxy: (AE) ITGLOBAL COM DMCC-[Tls]-[VL]
+- name: mixed52
+  type: mixed
+  port: 42052
+  proxy: (AL) Keminet SHPK-[Tls]-[TR]
+- name: mixed53
+  type: mixed
+  port: 42053
+  proxy: (AM) WEB LLC-[Tls]-[SS]
+- name: mixed54
+  type: mixed
+  port: 42054
+  proxy: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+- name: mixed55
+  type: mixed
+  port: 42055
+  proxy: (AU) Datacamp Limited-[Tls]-[TR]
+- name: mixed56
+  type: mixed
+  port: 42056
+  proxy: (AL) Keminet SHPK-[Tls]-[SS]
+- name: mixed57
+  type: mixed
+  port: 42057
+  proxy: (AU) "DigitalOcean-[Tls]-[TR]
+- name: mixed58
+  type: mixed
+  port: 42058
+  proxy: (AR) "BrainStorm Network-[Tls]-[SS]
+- name: mixed59
+  type: mixed
+  port: 42059
+  proxy: (AU) "DigitalOcean-[Tls]-[VL]
+- name: mixed60
+  type: mixed
+  port: 42060
+  proxy: (BG) Belcloud LTD-[Tls]-[TR]
+- name: mixed61
+  type: mixed
+  port: 42061
+  proxy: (CA) Datacamp Limited-[Tls]-[SS]
+- name: mixed62
+  type: mixed
+  port: 42062
+  proxy: (AU) ZGX PTY LTD-[Tls]-[VL]
+- name: mixed63
+  type: mixed
+  port: 42063
+  proxy: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[SS]
+- name: mixed64
+  type: mixed
+  port: 42064
+  proxy: (CA) Oracle Corporation-[Tls]-[TR]
+- name: mixed65
+  type: mixed
+  port: 42065
+  proxy: (BG) Belcloud LTD-[Tls]-[VL]
+- name: mixed66
+  type: mixed
+  port: 42066
+  proxy: (CA) "Kamatera-[Tls]-[SS]
+- name: mixed67
+  type: mixed
+  port: 42067
+  proxy: (CA) Oracle Corporation-[Tls]-[SS]
+- name: mixed68
+  type: mixed
+  port: 42068
+  proxy: (AU) TimeWeb Ltd.-[Tls]-[SS]
+- name: mixed69
+  type: mixed
+  port: 42069
+  proxy: (CA) "DigitalOcean-[Tls]-[TR]
+- name: mixed70
+  type: mixed
+  port: 42070
+  proxy: (CA) Amanah Tech Inc.-[Tls]-[VL]
+- name: mixed71
+  type: mixed
+  port: 42071
+  proxy: (CA) Amanah Tech Inc.-[Tls]-[SS]
+- name: mixed72
+  type: mixed
+  port: 42072
+  proxy: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+- name: mixed73
+  type: mixed
+  port: 42073
+  proxy: (BG) Vivacom Bulgaria EAD-[Tls]-[VL]
+- name: mixed74
+  type: mixed
+  port: 42074
+  proxy: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+- name: mixed75
+  type: mixed
+  port: 42075
+  proxy: (AM) G-Core Labs S.A.-[Tls]-[SS]
+- name: mixed76
+  type: mixed
+  port: 42076
+  proxy: (BR) Oracle Corporation-[Tls]-[SS]
+- name: mixed77
+  type: mixed
+  port: 42077
+  proxy: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[SS]
+- name: mixed78
+  type: mixed
+  port: 42078
+  proxy: (CA) "Kamatera-[Tls]-[VL]
+- name: mixed79
+  type: mixed
+  port: 42079
+  proxy: (AE) Oracle Corporation-[Tls]-[TR]
+- name: mixed80
+  type: mixed
+  port: 42080
+  proxy: (BR) M247 Europe SRL-[Tls]-[TR]
+- name: mixed81
+  type: mixed
+  port: 42081
+  proxy: (AE) G-Core Labs S.A.-[Tls]-[VL]
+- name: mixed82
+  type: mixed
+  port: 42082
+  proxy: (BR) M247 Europe SRL-[Tls]-[VL]
+- name: mixed83
+  type: mixed
+  port: 42083
+  proxy: (AM) GNC-Alfa CJSC-[Tls]-[VL]
+- name: mixed84
+  type: mixed
+  port: 42084
+  proxy: (AU) OVH SAS-[Tls]-[TR]
+- name: mixed85
+  type: mixed
+  port: 42085
+  proxy: (BG) GREEN FLOID LLC-[Tls]-[TR]
+- name: mixed86
+  type: mixed
+  port: 42086
+  proxy: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+- name: mixed87
+  type: mixed
+  port: 42087
+  proxy: (BG) M247 Europe SRL-[Tls]-[TR]
+- name: mixed88
+  type: mixed
+  port: 42088
+  proxy: (CA) "Amazon.com-[Tls]-[SS]
+- name: mixed89
+  type: mixed
+  port: 42089
+  proxy: (AE) Zenlayer Inc-[Tls]-[TR]
+- name: mixed90
+  type: mixed
+  port: 42090
+  proxy: (BG) DA International Group Ltd.-[Tls]-[VL]
+- name: mixed91
+  type: mixed
+  port: 42091
+  proxy: (BG) Belcloud LTD-[Tls]-[SS]
+- name: mixed92
+  type: mixed
+  port: 42092
+  proxy: (AU) Oracle Corporation-[Tls]-[TR]
+- name: mixed93
+  type: mixed
+  port: 42093
+  proxy: (AU) "The Constant Company-[Tls]-[VL]
+- name: mixed94
+  type: mixed
+  port: 42094
+  proxy: (AU) "DigitalOcean-[Tls]-[SS]
+- name: mixed95
+  type: mixed
+  port: 42095
+  proxy: (AM) GNC-Alfa CJSC-[Tls]-[TR]
+- name: mixed96
+  type: mixed
+  port: 42096
+  proxy: (AE) LLC Baxet-[Tls]-[VL]
+- name: mixed97
+  type: mixed
+  port: 42097
+  proxy: (AE) Oracle Corporation-[Tls]-[VL]
+- name: mixed98
+  type: mixed
+  port: 42098
+  proxy: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[TR]
+- name: mixed99
+  type: mixed
+  port: 42099
+  proxy: (AM) WEB LLC-[Tls]-[VL]
+- name: mixed100
+  type: mixed
+  port: 42100
+  proxy: (CA) "Kamatera-[Tls]-[TR]
+- name: mixed101
+  type: mixed
+  port: 42101
+  proxy: (CA) Server Cloud Canada Inc-[Tls]-[VL]
+- name: mixed102
+  type: mixed
+  port: 42102
+  proxy: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[VL]
+- name: mixed103
+  type: mixed
+  port: 42103
+  proxy: (AU) "The Constant Company-[Tls]-[TR]
+- name: mixed104
+  type: mixed
+  port: 42104
+  proxy: (AU) ZGX PTY LTD-[Tls]-[TR]
+- name: mixed105
+  type: mixed
+  port: 42105
+  proxy: (BG) GREEN FLOID LLC-[Tls]-[SS]
+- name: mixed106
+  type: mixed
+  port: 42106
+  proxy: (AE) Zenlayer Inc-[Tls]-[VL]
+- name: mixed107
+  type: mixed
+  port: 42107
+  proxy: (AT) EDIS GmbH-[Tls]-[SS]
+- name: mixed108
+  type: mixed
+  port: 42108
+  proxy: (AE) ITGLOBAL COM DMCC-[Tls]-[TR]
+- name: mixed109
+  type: mixed
+  port: 42109
+  proxy: (BE) Google LLC-[Tls]-[SS]
+- name: mixed110
+  type: mixed
+  port: 42110
+  proxy: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[SS]
+- name: mixed111
+  type: mixed
+  port: 42111
+  proxy: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+- name: mixed112
+  type: mixed
+  port: 42112
+  proxy: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+- name: mixed113
+  type: mixed
+  port: 42113
+  proxy: (AU) OVH SAS-[Tls]-[SS]
+- name: mixed114
+  type: mixed
+  port: 42114
+  proxy: (AE) ITGLOBAL COM DMCC-[Tls]-[SS]
+- name: mixed115
+  type: mixed
+  port: 42115
+  proxy: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+- name: mixed116
+  type: mixed
+  port: 42116
+  proxy: (AE) PDR-[Tls]-[VL]
+- name: mixed117
+  type: mixed
+  port: 42117
+  proxy: (AL) Albanian Hosting SH.P.K.-[Tls]-[TR]
+- name: mixed118
+  type: mixed
+  port: 42118
+  proxy: (AM) G-Core Labs S.A.-[Tls]-[TR]
+- name: mixed119
+  type: mixed
+  port: 42119
+  proxy: (AE) M247 Europe SRL-[Tls]-[SS]
+- name: mixed120
+  type: mixed
+  port: 42120
+  proxy: (AE) M247 Europe SRL-[Tls]-[VL]
+- name: mixed121
+  type: mixed
+  port: 42121
+  proxy: (BG) M247 Europe SRL-[Tls]-[SS]
+- name: mixed122
+  type: mixed
+  port: 42122
+  proxy: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[SS]
+- name: mixed123
+  type: mixed
+  port: 42123
+  proxy: (AE) BlueVPS OU-[Tls]-[VL]
+- name: mixed124
+  type: mixed
+  port: 42124
+  proxy: (CA) IT7 Networks Inc-[Tls]-[SS]
+- name: mixed125
+  type: mixed
+  port: 42125
+  proxy: (AE) BlueVPS OU-[Tls]-[TR]
+- name: mixed126
+  type: mixed
+  port: 42126
+  proxy: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[VL]
+- name: mixed127
+  type: mixed
+  port: 42127
+  proxy: (AT) EDIS GmbH-[Tls]-[TR]
+- name: mixed128
+  type: mixed
+  port: 42128
+  proxy: (AE) Kaopu Cloud HK Limited-[Tls]-[VL]
+- name: mixed129
+  type: mixed
+  port: 42129
+  proxy: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[TR]
+- name: mixed130
+  type: mixed
+  port: 42130
+  proxy: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[TR]
+- name: mixed131
+  type: mixed
+  port: 42131
+  proxy: (CA) "DigitalOcean-[Tls]-[SS]
+- name: mixed132
+  type: mixed
+  port: 42132
+  proxy: (AU) Datacamp Limited-[Tls]-[SS]
+- name: mixed133
+  type: mixed
+  port: 42133
+  proxy: (AE) M247 Europe SRL-[Tls]-[TR]
+- name: mixed134
+  type: mixed
+  port: 42134
+  proxy: (AU) iiNet Limited-[Tls]-[VL]
+- name: mixed135
+  type: mixed
+  port: 42135
+  proxy: (AL) Albanian Hosting SH.P.K.-[Tls]-[VL]
+- name: mixed136
+  type: mixed
+  port: 42136
+  proxy: (CA) IT7 Networks Inc-[Tls]-[VL]
+- name: mixed137
+  type: mixed
+  port: 42137
+  proxy: (AE) LLC Baxet-[Tls]-[TR]
+- name: mixed138
+  type: mixed
+  port: 42138
+  proxy: (CA) Server Cloud Canada Inc-[Tls]-[SS]
+- name: mixed139
+  type: mixed
+  port: 42139
+  proxy: (AE) Microsoft Corporation-[Tls]-[VL]
+- name: mixed140
+  type: mixed
+  port: 42140
+  proxy: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[SS]
+- name: mixed141
+  type: mixed
+  port: 42141
+  proxy: (BG) Vivacom Bulgaria EAD-[Tls]-[TR]
+- name: mixed142
+  type: mixed
+  port: 42142
+  proxy: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[SS]
+- name: mixed143
+  type: mixed
+  port: 42143
+  proxy: (BG) Vivacom Bulgaria EAD-[Tls]-[SS]
+- name: mixed144
+  type: mixed
+  port: 42144
+  proxy: (AU) "Amazon.com-[Tls]-[SS]
+- name: mixed145
+  type: mixed
+  port: 42145
+  proxy: (AR) "BrainStorm Network-[Tls]-[VL]
+- name: mixed146
+  type: mixed
+  port: 42146
+  proxy: (BR) "The Constant Company-[Tls]-[VL]
+- name: mixed147
+  type: mixed
+  port: 42147
+  proxy: (AT) EDIS GmbH-[Tls]-[VL]
+- name: mixed148
+  type: mixed
+  port: 42148
+  proxy: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[TR]
+- name: mixed149
+  type: mixed
+  port: 42149
+  proxy: (AU) TimeWeb Ltd.-[Tls]-[VL]
+- name: mixed150
+  type: mixed
+  port: 42150
+  proxy: (CA) eStruxture Data Centers Inc.-[Tls]-[TR]
+- name: mixed151
+  type: mixed
+  port: 42151
+  proxy: (AE) PDR-[Tls]-[TR]
+- name: mixed152
+  type: mixed
+  port: 42152
+  proxy: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[VL]
+- name: mixed153
+  type: mixed
+  port: 42153
+  proxy: (CA) Cooptel Coop de Telecommunication-[Tls]-[VL]
+- name: mixed154
+  type: mixed
+  port: 42154
+  proxy: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[TR]
+- name: mixed155
+  type: mixed
+  port: 42155
+  proxy: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[VL]
+- name: mixed156
+  type: mixed
+  port: 42156
+  proxy: (BG) Melbikomas UAB-[Tls]-[TR]
+- name: mixed157
+  type: mixed
+  port: 42157
+  proxy: (AM) RETN AM Limited Liability Company-[Tls]-[TR]
+- name: mixed158
+  type: mixed
+  port: 42158
+  proxy: (CA) Oracle Corporation-[Tls]-[VL]
+- name: mixed159
+  type: mixed
+  port: 42159
+  proxy: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[TR]
+- name: mixed160
+  type: mixed
+  port: 42160
+  proxy: (AU) TimeWeb Ltd.-[Tls]-[TR]
+- name: mixed161
+  type: mixed
+  port: 42161
+  proxy: (AM) RETN AM Limited Liability Company-[Tls]-[VL]
+- name: mixed162
+  type: mixed
+  port: 42162
+  proxy: (BE) Google LLC-[Tls]-[TR]
+- name: mixed163
+  type: mixed
+  port: 42163
+  proxy: (BG) ALEXHOST SRL-[Tls]-[TR]
+- name: mixed164
+  type: mixed
+  port: 42164
+  proxy: (AE) Zenlayer Inc-[Tls]-[SS]
+- name: mixed165
+  type: mixed
+  port: 42165
+  proxy: (AL) Albanian Hosting SH.P.K.-[Tls]-[SS]
+- name: mixed166
+  type: mixed
+  port: 42166
+  proxy: (AR) Gigared S.A.-[Tls]-[VL]
+- name: mixed167
+  type: mixed
+  port: 42167
+  proxy: (AR) "BrainStorm Network-[Tls]-[TR]
+- name: mixed168
+  type: mixed
+  port: 42168
+  proxy: (BR) "The Constant Company-[Tls]-[TR]
+- name: mixed169
+  type: mixed
+  port: 42169
+  proxy: (CA) BitCommand LLC-[Tls]-[SS]
+- name: mixed170
+  type: mixed
+  port: 42170
+  proxy: (CA) "Akamai Technologies-[Tls]-[VL]
+- name: mixed171
+  type: mixed
+  port: 42171
+  proxy: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[VL]
+- name: mixed172
+  type: mixed
+  port: 42172
+  proxy: (AU) "The Constant Company-[Tls]-[SS]
+- name: mixed173
+  type: mixed
+  port: 42173
+  proxy: (BR) M247 Europe SRL-[Tls]-[SS]
+- name: mixed174
+  type: mixed
+  port: 42174
+  proxy: (AU) Datacamp Limited-[Tls]-[VL]
+- name: mixed175
+  type: mixed
+  port: 42175
+  proxy: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[SS]
+- name: mixed176
+  type: mixed
+  port: 42176
+  proxy: (BG) ALEXHOST SRL-[Tls]-[VL]
+- name: mixed177
+  type: mixed
+  port: 42177
+  proxy: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[SS]
+- name: mixed178
+  type: mixed
+  port: 42178
+  proxy: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[VL]
+- name: mixed179
+  type: mixed
+  port: 42179
+  proxy: (AU) Contabo Asia Private Limited-[Tls]-[VL]
+- name: mixed180
+  type: mixed
+  port: 42180
+  proxy: (AU) Contabo Asia Private Limited-[Tls]-[TR]
+- name: mixed181
+  type: mixed
+  port: 42181
+  proxy: (CA) BitCommand LLC-[Tls]-[VL]
+- name: mixed182
+  type: mixed
+  port: 42182
+  proxy: (CA) Server Cloud Canada Inc-[Tls]-[TR]
+- name: mixed183
+  type: mixed
+  port: 42183
+  proxy: (AM) GNC-Alfa CJSC-[Tls]-[SS]
+- name: mixed184
+  type: mixed
+  port: 42184
+  proxy: (BG) ALEXHOST SRL-[Tls]-[SS]
+- name: mixed185
+  type: mixed
+  port: 42185
+  proxy: (CA) Microsoft Corporation-[Tls]-[TR]
+- name: mixed186
+  type: mixed
+  port: 42186
+  proxy: (AE) Microsoft Corporation-[Tls]-[SS]
+- name: mixed187
+  type: mixed
+  port: 42187
+  proxy: (AR) Gigared S.A.-[Tls]-[SS]
+- name: mixed188
+  type: mixed
+  port: 42188
+  proxy: (AE) LLC Baxet-[Tls]-[SS]
+- name: mixed189
+  type: mixed
+  port: 42189
+  proxy: (CA) Microsoft Corporation-[Tls]-[SS]
+- name: mixed190
+  type: mixed
+  port: 42190
+  proxy: (CA) eStruxture Data Centers Inc.-[Tls]-[VL]
+- name: mixed191
+  type: mixed
+  port: 42191
+  proxy: (AU) Contabo Asia Private Limited-[Tls]-[SS]
+- name: mixed192
+  type: mixed
+  port: 42192
+  proxy: (CA) "Akamai Technologies-[Tls]-[SS]
+- name: mixed193
+  type: mixed
+  port: 42193
+  proxy: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[VL]
+- name: mixed194
+  type: mixed
+  port: 42194
+  proxy: (CA) Cooptel Coop de Telecommunication-[Tls]-[SS]
+- name: mixed195
+  type: mixed
+  port: 42195
+  proxy: (AE) BlueVPS OU-[Tls]-[SS]
+- name: mixed196
+  type: mixed
+  port: 42196
+  proxy: (CA) eStruxture Data Centers Inc.-[Tls]-[SS]
+- name: mixed197
+  type: mixed
+  port: 42197
+  proxy: (AU) ZGX PTY LTD-[Tls]-[SS]
+- name: mixed198
+  type: mixed
+  port: 42198
+  proxy: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[VL]
+- name: mixed199
+  type: mixed
+  port: 42199
+  proxy: (AT) Schokker IT B.V.-[Tls]-[VL]
+- name: mixed200
+  type: mixed
+  port: 42200
+  proxy: (CA) Microsoft Corporation-[Tls]-[VL]
+- name: mixed201
+  type: mixed
+  port: 42201
+  proxy: (AT) Schokker IT B.V.-[Tls]-[TR]
+- name: mixed202
+  type: mixed
+  port: 42202
+  proxy: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[TR]
+- name: mixed203
+  type: mixed
+  port: 42203
+  proxy: (AU) OVH SAS-[Tls]-[VL]
+- name: mixed204
+  type: mixed
+  port: 42204
+  proxy: (AU) iiNet Limited-[Tls]-[TR]
+- name: mixed205
+  type: mixed
+  port: 42205
+  proxy: (CA) Cooptel Coop de Telecommunication-[Tls]-[TR]
+- name: mixed206
+  type: mixed
+  port: 42206
+  proxy: (AE) Microsoft Corporation-[Tls]-[TR]
+- name: mixed207
+  type: mixed
+  port: 42207
+  proxy: (CA) IT7 Networks Inc-[Tls]-[TR]
+- name: mixed208
+  type: mixed
+  port: 42208
+  proxy: (AE) PDR-[Tls]-[SS]
+- name: mixed209
+  type: mixed
+  port: 42209
+  proxy: (AU) iiNet Limited-[Tls]-[SS]
+proxies:
+- name: (AE) Oracle Corporation-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 6498d357-09ec-464c-a9c9-956971044c07
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /139.185.46.148-31135
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) UltraNET Ltd-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 0f13fed6-7604-4ff6-8485-8e9dc27f42d8
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.149.132.206-28994
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) OVH SAS-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ef24e614-7c97-4420-9f59-7c1dced21384
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /51.222.136.86-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) Oracle Corporation-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: b864a4a5-f5bf-4a5a-a76c-b184c0164564
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /132.226.163.224-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 8205eb4d-9065-41a8-9f6c-0e72c4828f17
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.21.252.221-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) OVH SAS-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 1eb33524-c1c8-4909-a494-87771f06dc35
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /192.99.252.243-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) Google LLC-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4fba16c2-09f5-4ecb-9021-4543d8727e8f
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /34.22.190.30-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) WEB LLC-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: e993e422-afb8-4467-8ff2-3e3a32e81a4f
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /2.56.204.183-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) OVH SAS-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 115b56f0-93da-4cb6-bb44-7eaef0b63b5b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /15.235.48.70-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Kaopu Cloud HK Limited-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 9726af7e-5bd1-44b9-a6a1-9a3422b58d80
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.54.9.186-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Amazon.com-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 84f0542d-fe15-4d08-8eca-508fb53fd3a9
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /3.97.173.206-80
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) G-Core Labs S.A.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 96c79be3-9105-4ad9-bdaf-2446a544a35d
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /217.195.200.153-1
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Amanah Tech Inc.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5f5b8a89-9061-433e-95b7-25aa69c7a6d6
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.113.188.111-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) FIRST SERVER LIMITED-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 1509675a-9dc7-45da-87ae-bee478ac9c69
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /193.239.160.39-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "DigitalOcean-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e6710e03-a2e2-451e-b8a6-eca7d81f65a0
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /137.184.168.222-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) DA International Group Ltd.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7009bb73-be71-4150-ba96-f9e6169727fa
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /78.128.127.89-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Corporation-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 3b6eef75-554f-4531-9a2b-75e5514a47cf
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /192.9.184.12-1013
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) GREEN FLOID LLC-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: f0dca36f-d9fe-4552-beb3-b474730faf30
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /195.245.113.28-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) M247 Europe SRL-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: a3e63c8f-1e5b-4053-ac2a-8f9ed1474d7a
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.2.122-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) UltraNET Ltd-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 5ab255e8-5ce0-4c10-9d49-8cbd9f26b3cb
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /77.77.35.161-37735
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) AEZA INTERNATIONAL LTD-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 7c571c19-1aa6-4227-91f5-5cb0616532ca
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /78.153.130.94-28233
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Melbikomas UAB-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 061dd5f3-5b12-445d-98cf-f8ca91e5c61d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.183.63.68-36651
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Hohl IT e.U.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 299e5167-a268-4835-b08c-a46b42098dcd
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /94.177.8.54-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Datacamp Limited-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 55647be3-7f5d-4a96-89c0-de4a24c47ad5
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /104.234.240.114-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) FIRST SERVER LIMITED-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 4a05a22d-3756-4573-b91d-6f81d933808e
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.239.160.39-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Akamai Technologies-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 130d1cef-798c-491b-b70c-0b9daedf991d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.105.11.67-15223
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Corporation-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 1bce86d3-3384-49b4-920a-c037d59bac28
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /192.9.180.162-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) DA International Group Ltd.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: ead78be2-9942-4a18-9eac-b54a435c90ba
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /78.128.127.89-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Hohl IT e.U.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: eeed8ed5-3441-4e4c-aff8-abe8393c9ed9
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /94.177.8.43-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) G-Core Labs S.A.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 9fd3c537-b191-4a6a-a6c1-39fbdc0ca27f
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /85.90.207.91-8081
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) UltraNET Ltd-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 6e107ab6-38b9-4a7c-bc43-4ba894d3f75e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.247.56.157-29743
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) AEZA INTERNATIONAL LTD-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c6d6d9f6-53a5-49ca-b1a3-236efaa68c9d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.233.232.30-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Datacamp Limited-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ca05e066-a07c-4af9-8308-35c3595af5b1
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /104.234.240.179-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Schokker IT B.V.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: bd3a129d-eb93-4078-8e46-e60d30e2f703
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /185.155.220.64-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Melbikomas UAB-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 094d573d-b25e-4997-9223-19a9adb17d62
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /213.183.63.68-36651
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) FIRST SERVER LIMITED-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 138ae549-f556-4bfb-8b2f-13f881c76c07
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.239.160.45-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "Amazon.com-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 74e205f6-f331-46a5-b9e3-a7f2c32bc3a2
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /3.24.174.233-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Hohl IT e.U.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 92b7fe5f-8492-4150-b3f7-70cc2d09f5e5
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /94.177.8.51-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) G-Core Labs S.A.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: d2dc0eb7-ab8e-4295-aba0-0a50f990593c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.195.200.138-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Keminet SHPK-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: eb638a38-b2b8-4ead-9b7f-15e230831c9b
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.171.152.222-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "Amazon.com-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 9007a476-d779-4de6-a5e3-ec7bd1752bd5
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /3.24.174.233-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: f6a3d37c-c65b-4083-81b9-0d1db749d8ff
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /147.45.116.50-24443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Amazon.com-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 070c515b-86fe-4705-a1df-0ed633994b09
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /35.183.163.195-80
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) AEZA INTERNATIONAL LTD-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 940105a7-0990-4416-8771-b8f0d07b7fbc
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /193.233.232.226-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) BitCommand LLC-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: d0832b5d-602f-4c61-893c-e32b3c5cb42f
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.197.97.207-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) RETN AM Limited Liability Company-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 6f805c56-7c86-43a8-8244-51b70c3b8c97
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /139.45.214.58-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Kaopu Cloud HK Limited-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 9afeee59-a881-4457-b239-3900a026fe2e
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /38.54.9.186-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) "The Constant Company-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b3bd91fa-4b94-4789-b437-3ecaaec6899d
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /216.238.108.127-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: b7124712-87af-4f52-a620-f6262b8c614e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /194.156.103.58-41210
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) Oracle Corporation-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 47120b47-34e0-42eb-af44-845c93a50dbf
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /168.138.141.235-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) Gigared S.A.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 4ebf14e7-74f0-4b1e-ae4d-1d0241c9087d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /190.183.61.62-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ITGLOBAL COM DMCC-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: d1704b26-4ffc-4efd-a912-c12d7fdfcedd
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.209.49.17-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Keminet SHPK-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 1911ebb3-b4ac-44e3-90db-ae3c0f0c855d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.171.152.215-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) WEB LLC-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7fc3268b-ff4a-4d02-8474-0c37979b6c48
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /2.56.206.64-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 29c4d2b7-3651-4515-a565-2814890f49fc
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /5.44.42.166-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Datacamp Limited-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: c744e962-cd0e-44d0-aec2-1774e7c7ac59
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /212.81.47.154-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Keminet SHPK-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: d4858a49-062e-425a-8126-1d0b270627f0
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /31.171.152.216-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "DigitalOcean-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 9f569d71-bf98-4d71-9a63-320b94d22fed
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /170.64.192.191-31257
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) "BrainStorm Network-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fc6b647f-facd-48a2-964d-2f6c3817fb7e
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /31.40.212.216-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "DigitalOcean-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e353ab3a-7569-4aff-9f26-1c98bfddfe0a
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /209.38.27.6-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Belcloud LTD-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: b9c4126f-8208-43de-be23-7324cf6caea1
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.37.214.60-18836
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Datacamp Limited-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b8600ead-ed36-45bd-8fa2-9f50a49da5c5
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /104.234.240.114-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) ZGX PTY LTD-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 78641b2d-6a35-46dc-b28b-97148acf94cf
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.65.140.115-12224
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 3d11b2e8-baa1-449f-97a8-5f76b4916673
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /45.83.143.35-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Oracle Corporation-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: f6175bb4-08a1-4195-9561-4b6653144cf9
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /140.238.158.238-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Belcloud LTD-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 7f5a8a15-7537-4b6d-9eae-720c4e067dad
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.177.59.147-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Kamatera-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 52262af4-56de-4e86-9970-81b11ee69cd5
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /213.255.209.189-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Oracle Corporation-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 49bfa007-927d-4644-8f06-24d26d203fad
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /192.18.159.164-36545
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) TimeWeb Ltd.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 6ff2c3a9-4234-4300-9ac9-f0059e64c261
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /82.97.247.226-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "DigitalOcean-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: d5d0e8cb-f166-45f0-9b9d-c3bb9df8e0da
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /137.184.168.222-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Amanah Tech Inc.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c7064385-876f-4a92-80f5-57a75746e0b5
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.113.188.117-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Amanah Tech Inc.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fcf5f7b1-5178-4d1d-ba80-f4db8f94afec
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /38.113.188.116-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 833d1bfb-24db-4a2b-b66b-61999ecae09a
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /194.156.103.58-41210
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Vivacom Bulgaria EAD-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: a44abe16-b178-416e-ac76-7e77b3fe0463
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /158.58.237.156-10809
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 973bdd2e-3502-4a0d-a17f-ff3ad2de8f20
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /5.44.42.108-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) G-Core Labs S.A.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 99392b56-5f5f-43eb-ac3b-10174116c8c8
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /85.90.207.91-8081
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) Oracle Corporation-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 669b4714-3ab6-416d-8336-f45656e9fb34
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /144.22.204.102-50317
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 8dbeae90-2a7f-4ac2-8257-3ef767b94f0a
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /125.7.24.251-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Kamatera-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 1de2817f-2cbc-4df1-a251-3e9f65822fb0
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.255.209.207-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Oracle Corporation-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 4e347566-369a-4510-b23b-5b1dcae584b7
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /193.123.69.77-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) M247 Europe SRL-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 423dc128-1f30-4161-95ba-fd8c66b0ddb2
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.78.255-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) G-Core Labs S.A.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4ed2ce8f-4bcf-48e3-8c9d-99cb9b364832
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.195.200.138-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) M247 Europe SRL-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: bc446ad8-35c0-42b5-9574-5fca0346c5b6
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.79.9-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GNC-Alfa CJSC-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4af05e05-55f6-4d8d-a5db-2f5846f658b6
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /46.19.99.68-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) OVH SAS-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 566768a1-c0e5-48fb-9042-1e7aa83d9d37
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.99.236.163-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) GREEN FLOID LLC-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6042e1da-3f68-4251-a000-f915cab036aa
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /91.210.166.32-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: a5f8c0c3-a36e-4dc1-a588-871586c45816
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /147.45.116.61-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) M247 Europe SRL-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: aa131fcb-24b3-4557-9720-c544c7a7e58f
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.136.198.107-31202
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Amazon.com-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: b8ab2ed8-32fc-4b35-a4b4-32c5f47accd1
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /15.157.59.78-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Zenlayer Inc-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 3eaab771-ab99-4bbd-817c-b642b7f77953
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /37.202.222.182-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) DA International Group Ltd.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ff0d7ae5-b1a9-4ecd-8924-746a96cf66a3
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /79.124.7.236-444
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Belcloud LTD-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7b0fc3a0-e85c-4043-8b39-08ba86750151
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /185.177.59.147-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Corporation-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 4a32ecc3-1557-4974-9ed3-6de2604d7929
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /152.69.174.99-25248
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "The Constant Company-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: ead123d5-adcb-4e66-9f00-9fab98b7950c
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /149.28.162.204-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "DigitalOcean-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: f16cb989-95fe-4ca9-bb00-9246d5ed77a9
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /170.64.192.191-31257
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GNC-Alfa CJSC-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: fe4e8429-5ae3-4297-8dcc-1b7de5184d33
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /46.19.99.68-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) LLC Baxet-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 8f085fe3-865c-487b-ab90-baf7f1590aec
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.89.230.50-31599
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Oracle Corporation-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c31a7a5f-a33e-4103-bd69-13455be4b8f8
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.185.39.237-48008
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 294c8e34-4ec2-4395-b220-4cbbd4832cab
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /95.164.112.53-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) WEB LLC-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 7e0ce326-2bf2-40c3-84bd-2939196e1c05
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /2.56.205.182-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Kamatera-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 9e34fd2c-371a-4140-8b4b-4b8f4f7f01c4
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.98.215.83-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Server Cloud Canada Inc-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 28e0d275-bb68-437e-8036-46da77387ff0
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /199.48.102.83-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 0cd3faf2-04b5-4d35-af07-7f66546ee985
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.21.252.221-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "The Constant Company-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 142f466c-bf4f-4e87-ad86-c9e37ac66f19
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.77.236.204-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) ZGX PTY LTD-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 0672557e-5b70-40a6-b8e4-9135309d620b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.65.140.115-12224
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) GREEN FLOID LLC-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7fa0bf08-4189-423c-8aa9-aa8b5562eae6
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /185.82.218.224-9443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Zenlayer Inc-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 47653640-89b2-4c15-b6fe-4181c2cca9f6
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /181.215.205.141-8081
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) EDIS GmbH-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a36ed4ba-8924-4f7b-bbdd-b239ed75ade9
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /45.153.125.245-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ITGLOBAL COM DMCC-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6957ebc9-5256-4a18-81ec-3acaac05391d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.209.49.17-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) Google LLC-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 34cfac2f-7a6c-496c-9905-3848704a0fdf
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /34.22.190.30-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e64ff63e-7a5e-45a7-80c6-f27a9628c188
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /152.32.181.246-44070
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 8bf06bdb-1421-45d9-9544-5f86fefb64ac
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /194.156.103.31-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: af89d0cb-718d-4996-af44-b940d7a88d5e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /5.44.42.108-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) OVH SAS-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 42a5c2a2-63f8-4daa-9367-81be15634f1d
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /139.99.236.163-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ITGLOBAL COM DMCC-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 9fee69fb-f70a-4c60-b881-f3d880c76555
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /185.209.49.17-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) GLOBAL CONNECTIVITY SOLUTIONS LLP-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 322e2cfe-39ec-4d49-908f-a5def8fa4010
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /147.45.116.50-24443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) PDR-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 84006941-8976-46cf-bd96-a9374a9f038d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.10.243.159-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Albanian Hosting SH.P.K.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: f0534d82-1cca-4a22-a3ec-78ddafcdf50a
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.167.234.131-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) G-Core Labs S.A.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 54f57945-e380-4617-8bb9-5fdd5531a1b0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /85.90.207.20-8081
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) M247 Europe SRL-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e2c91c75-9b21-408c-9a2b-2483d1f6f5a6
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /176.97.66.175-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) M247 Europe SRL-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: b75c3201-fd87-4e2c-acca-21f84808aa29
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.11.201-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) M247 Europe SRL-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: d4daed67-a5cd-4402-9c6a-7c4c90c9f7dd
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /45.136.198.107-23291
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) SOLUTTI NETWORKS LTDA-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: ee536431-20eb-4e7e-a14b-661631bdb4b5
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /185.21.252.221-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) BlueVPS OU-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: eb33ad66-5891-437f-9833-96f64eb85c71
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.86.228.104-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) IT7 Networks Inc-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 76b90099-d40b-4ac3-8315-442bcd996398
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /172.93.32.131-23077
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) BlueVPS OU-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6d673f65-5ffa-4673-90c2-61e1d279aa0c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.86.228.104-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: e50427c5-e4f1-4223-a9e6-44ac4945e1ff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.83.143.35-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) EDIS GmbH-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5dc7c56f-f489-427b-8510-d730e27e1bcf
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.153.125.245-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Kaopu Cloud HK Limited-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 135b96ce-daa9-4dbb-b00b-18521a96ec5d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.54.9.186-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: cc84da8c-8dfc-43a4-8abf-73b8adda5480
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.83.143.35-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: c961f5be-e9f5-4c78-b811-f496336afa65
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.127.181.253-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "DigitalOcean-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 58a62d1f-6aa3-4d0f-ad57-8d51c3c35378
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /137.184.168.222-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Datacamp Limited-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fd8ce426-db54-4244-b1dd-46ea1f8cb72a
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /212.81.47.154-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) M247 Europe SRL-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5579773a-88c5-4918-bb1a-b51d47f5e16f
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.11.201-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) iiNet Limited-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 3cb1d214-eb4b-434e-aa08-749daf06af72
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /180.200.129.116-37215
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Albanian Hosting SH.P.K.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 204f4c1b-b869-4cf7-8a6a-d022108f6ae2
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /103.167.234.131-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) IT7 Networks Inc-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 6b6cb805-5dea-4657-a080-5fc95ef388b7
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.93.32.131-23077
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) LLC Baxet-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 5e017d7f-a8f6-4727-8912-31beb6c368cc
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.89.230.50-31599
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Server Cloud Canada Inc-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 6df10f39-5745-447e-a163-b2188f2933be
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /199.48.102.83-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Microsoft Corporation-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 855e3269-d378-49e0-ba92-cd522a753b4d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.233.68.69-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 74aea43f-f32f-45ad-87ec-b23261e7273c
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /5.181.21.220-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Vivacom Bulgaria EAD-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 49072abf-934e-4f37-a971-9b243a3bc134
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /158.58.237.156-10809
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 179b13f8-0fb5-4709-b40d-8bd7de198fce
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /172.98.207.58-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Vivacom Bulgaria EAD-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e4d0e7d9-1a3e-4f46-adee-169a3c9802b3
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /158.58.237.156-10809
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "Amazon.com-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: c86aa42c-a017-4c95-a970-01ffee0f5385
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /3.24.174.233-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) "BrainStorm Network-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c020779e-4ad9-4b73-bfc7-b6e1d8b5713f
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.40.212.216-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) "The Constant Company-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 1c9ff1e4-f691-4bcd-a809-4f7c2c80e4c4
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.238.108.127-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) EDIS GmbH-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4ed3dc07-fc5a-4e65-b5cb-adf5c0098780
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /45.153.125.245-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: a34e005c-3f90-4b7b-8bc4-6c9861e96553
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.185.165.63-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) TimeWeb Ltd.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 2ead6daa-dc19-4ada-aab3-3f89cdf06cac
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /82.97.247.226-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) eStruxture Data Centers Inc.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: a1618818-32e5-4672-9941-9c5e265fedf9
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.127.82-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) PDR-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: c8a09e4d-4a85-44ab-bfbc-43e7fd523425
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.10.243.159-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 7127f6e2-d774-4596-8809-ddb414cc538d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.185.165.63-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Cooptel Coop de Telecommunication-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 37bf51e8-f126-4c9b-a457-849f9548a565
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /198.168.101.245-31460
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 37c5516e-39ec-46a3-b395-8d139e6dc06c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /152.32.181.246-44070
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: eb12b418-6fd4-443f-a03a-af0b55b25388
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /152.32.181.246-44070
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) Melbikomas UAB-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 06772f5d-3d98-490f-9112-209814f96ced
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /213.183.63.71-53811
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) RETN AM Limited Liability Company-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: accb9c46-585f-4eaa-b8f4-341c0635657c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.45.214.118-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Oracle Corporation-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c331ac27-fbca-4a63-83ba-21ac6dc5298b
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /140.238.158.238-8080
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 04dae8e5-34ed-4729-b5f9-4b280fbe8e1b
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /125.7.24.251-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) TimeWeb Ltd.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: d8d1bee1-983c-4efc-ab15-7348acedb545
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /82.97.247.226-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) RETN AM Limited Liability Company-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c7342565-822e-4e8b-9488-c8f198f773fc
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.45.214.118-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) Google LLC-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 944b3fd3-9614-469d-90f4-c096f16f19a6
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /34.22.142.117-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) ALEXHOST SRL-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: ab9d34c5-c2d9-48cc-83fd-f4fc7e7d258d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.216.68.91-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Zenlayer Inc-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: f7f29944-314e-40b2-a336-d2ddc50e9ee4
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /37.202.222.182-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AL) Albanian Hosting SH.P.K.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: d3e2e2cb-5c17-4d29-9100-5d5764686cfe
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /103.167.234.131-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) Gigared S.A.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 249f7053-ad28-4be1-b7fc-fa028ab101e1
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /190.183.61.62-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) "BrainStorm Network-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: dddeabe9-9563-4ebc-8b00-e641cacd6f9d
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /31.40.212.216-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) "The Constant Company-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: e3c405b9-de9d-4fa4-86ac-f689e3335d99
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /216.238.108.127-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) BitCommand LLC-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 64483f45-5beb-408f-bd45-5f6fc3e909f0
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /217.197.97.207-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Akamai Technologies-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 065031d6-bca0-447f-bda1-25d52010f8ed
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.105.26.112-2443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c914dcc8-aba1-4324-a7eb-4514410f61b8
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /93.127.181.253-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) "The Constant Company-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 3b6e2256-e1f4-4ece-b64c-75f4b6e4fbe0
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /149.28.162.204-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BR) M247 Europe SRL-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 3d024834-2b09-4a48-88ba-a8cb3cc97506
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /38.180.78.255-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Datacamp Limited-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 086f899c-9087-45ca-bafd-c5d1eb95790d
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /212.81.47.154-8443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) ONLINE SERVER TELEKOMUNIKASYON LIMITED SIRKETI-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 8182a8fa-978b-4622-b8c9-30680508dbd3
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /93.127.181.253-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) ALEXHOST SRL-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: fcf80128-33c3-4583-ac21-cb1d94074067
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.216.68.91-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BE) S.C. INFOTECH-GRUP S.R.L.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 9028b99b-75e7-4082-a4e3-3ad192bc0358
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /93.185.165.63-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) STARK INDUSTRIES SOLUTIONS LTD-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 4540a3d1-0158-43a3-a2c0-1e3eb67226be
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /95.164.112.53-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Contabo Asia Private Limited-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 6b7cc342-933b-4f9b-b2f7-8938e8595482
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /154.26.155.98-24726
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Contabo Asia Private Limited-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: ab04c7ae-1e5c-4305-b82f-c5989378681f
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /154.26.155.98-24726
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) BitCommand LLC-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 46f5ba94-4288-48a1-8f61-3c0b5e148b4e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /217.197.97.207-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Server Cloud Canada Inc-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: a76c1f45-6acd-4f17-8c14-b7d061c8bc96
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /199.48.102.83-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AM) GNC-Alfa CJSC-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 4155df3f-6b44-4ae3-9a47-52c43dbbd492
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /46.19.99.68-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (BG) ALEXHOST SRL-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 471aa842-dc84-4d06-9bc7-d6ea641b4ab8
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /185.216.68.91-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Microsoft Corporation-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: f33830ac-31f8-4d02-a4f3-9c3ece0409f4
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.220.29.122-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Microsoft Corporation-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 5e8e1998-a5ec-44eb-a7d2-16ace677e989
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /20.233.68.69-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AR) Gigared S.A.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 815b670b-3569-4cbc-90ec-037f493ac933
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /190.183.61.62-8443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) LLC Baxet-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: aec5e72d-e25f-4fe6-be01-aa2f4c883f3f
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /45.89.230.50-31599
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Microsoft Corporation-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: d1eceabf-ad21-4a5d-91cc-612372564d22
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /20.220.29.122-2053
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) eStruxture Data Centers Inc.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 18e688cc-3170-44d7-b67a-b9d184d54d59
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /38.180.127.82-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Contabo Asia Private Limited-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 1a995017-0ccb-4b1f-90c3-c92aeed41289
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /154.26.155.98-24726
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) "Akamai Technologies-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: a8ecf564-ef3f-4d3d-a88b-bf3328c33c20
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /172.105.11.67-15223
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 7459a93e-6198-43aa-bfd3-7d31bff69c58
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.98.207.58-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Cooptel Coop de Telecommunication-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 51d7b68f-0ddd-42e4-8504-c496a7d7596c
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /198.168.101.245-31460
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) BlueVPS OU-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 6cc36328-1d9f-4962-9cdc-ec3b9e4a0625
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /45.86.228.104-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) eStruxture Data Centers Inc.-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: e31879e6-4b9a-4294-bee1-17cd447d10df
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /38.180.127.82-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) ZGX PTY LTD-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 36a3c63e-a16d-4b90-8aac-5781aff8c1ce
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /103.65.140.115-12224
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Macquarie Technology Operations Pty Limited-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: f8f47f19-97da-402e-b4d9-e698ed9861ea
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /125.7.24.251-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Schokker IT B.V.-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: c66b26f3-c34c-4604-a233-63116eab9b56
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.155.220.64-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Microsoft Corporation-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 075b103f-d45c-480a-9b7e-5a966a24163e
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.220.29.122-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Schokker IT B.V.-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 146c002e-b2f6-4cac-8f6f-ce0d9738dff1
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /185.155.220.64-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) ADVANCED KNOWLEDGE NETWORKS-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 45a0f772-a2de-4f0c-9c0a-4f0d03c46d5c
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.98.207.58-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) OVH SAS-[Tls]-[VL]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: vless
+  uuid: 78cf6367-2bc6-4e33-87b0-07b03e1bb606
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /139.99.236.163-443
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) iiNet Limited-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6921be6f-bfda-434b-977e-4875d374c2d7
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /180.200.129.116-37215
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) Cooptel Coop de Telecommunication-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: fcab56a8-8de4-4239-a748-f6114975a088
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /198.168.101.245-31460
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) Microsoft Corporation-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: d1ce8e28-d4bf-4424-90cb-b952a250aea0
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /20.233.68.69-2053
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CA) IT7 Networks Inc-[Tls]-[TR]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: trojan
+  password: 6724ce4a-3125-4f92-97c8-6a6a122dd5cb
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: nontontv.vidio.com.isidomain.web.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /172.93.32.131-23077
+    headers:
+      Host: nontontv.vidio.com.isidomain.web.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AE) PDR-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: fbb58ec6-e79c-4797-bee5-b016f82b6310
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /216.10.243.159-443
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) iiNet Limited-[Tls]-[SS]
+  server: nontontv.vidio.com.isidomain.web.id
+  port: 443
+  type: ss
+  cipher: none
+  password: 7ef4e0c0-2d23-49e5-876b-27e53f56e1fb
+  plugin: v2ray-plugin
+  client-fingerprint: chrome
+  udp: true
+  plugin-opts:
+    mode: websocket
+    host: nontontv.vidio.com.isidomain.web.id
+    path: /180.200.129.116-37215
+    tls: true
+    mux: false
+    skip-cert-verify: true
+  headers:
+    custom: value
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
