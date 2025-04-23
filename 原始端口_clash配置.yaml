@@ -1,0 +1,5010 @@
+allow-lan: true
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 114.114.114.114
+  nameserver:
+  - https://doh.pub/dns-query
+proxies:
+- name: (SE) Aeza International-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/176.124.207.233-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-29
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/54.37.64.97-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) SERVA ONE LTD-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/2.59.183.26-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CH) Global Connectivity Solutions Llp-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.95.232.18-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) Akamai Connected Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/172.236.30.225-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Servers Tech Fzco-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.110.116.141-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) ColoCrossing-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/192.3.127.23-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) OVHcloud-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.144.181.160-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-30
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/141.94.223.93-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) ColoCrossing-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/192.210.255.17-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) 2slink GmbH-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.61.31.250-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/46.226.160.150-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) LG Uplus-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/123.142.67.164-50000
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-31
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/51.210.101.146-2087
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Peg Tech-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/107.148.28.125-20936
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (IE) Microsoft Azure-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/40.113.60.248-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AU) Oracle Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/192.9.190.80-23862
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) TimeWeb-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.228.125.66-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/95.164.37.32-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CH) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.131.12.30-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TR) Stark Industries Solutions LTD-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.131.108.39-23352
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-32
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/54.38.219.132-12055
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.192.28-12216
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) OVHcloud-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/86.110.56.129-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) The Infrastructure Group-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.2.75.70-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Microsoft Azure-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/172.201.76.19-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (JP) Ztv Co.-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/202.60.191.6-29192
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TR) TradeZone-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/188.132.192.194-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-33
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/51.83.189.185-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (IL) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.221.225.198-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) KT-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/119.196.92.200-50000
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) Oracle Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/141.147.85.167-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SG) Psychz Networks-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/103.79.79.128-45501
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (JP) IT7 Networks-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.78.62.46-16471
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) CGI GLOBAL LIMITED-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.11.93.113-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Zomro-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.224.133.146-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) TimeWeb-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/194.35.119.135-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) ColoCrossing-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/107.172.103.195-16036
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-34
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/109.176.244.174-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/77.91.73.147-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.234.64.115-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Oracle Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/132.145.152.194-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-12
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/109.120.134.96-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (HK) Alibaba-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/47.238.226.62-58009
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) OVHcloud-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/86.110.56.230-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) Kuroit-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.67.84.128-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-35
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/146.103.49.185-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) KT-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/121.154.68.40-31870
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Beijing Fengniao Network Technology Co.-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/103.170.72.129-27054
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Servers Tech Fzco-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/77.238.246.45-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) Aeza Group-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.174.136.23-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) Oracle Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/152.69.227.97-587
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/193.233.233.148-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.206.151-2096
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) Sprinthost.ru-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.251.89.102-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-36
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.23.147.217-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) LG Uplus-(Tls)-(VL)-4
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/125.176.156.67-50000
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-13
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.22.230.21-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-14
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.230.143.122-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (JP) Oracle Cloud-(Tls)-(VL)-4
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/132.145.124.43-12510
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/88.198.156.62-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/150.241.71.226-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-15
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/147.45.76.216-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TR) Itglobal.com Nl-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.141.98.172-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Alibaba-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/47.252.69.111-32853
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) KT-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/14.39.172.147-30077
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-37
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/146.103.49.196-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-38
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/191.96.153.22-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CY) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/2.56.127.220-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-16
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/147.45.73.245-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/147.45.43.232-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Internap Corporation-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/66.151.42.239-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-39
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/162.19.254.49-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Digital Ocean-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/188.166.108.45-14235
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) First Server-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/87.239.250.229-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) JSC IOT-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/91.107.122.195-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-40
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/146.59.19.208-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TR) DC Host-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/216.9.224.51-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Multacom Corporation-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/74.48.5.119-21878
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-41
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/141.94.222.188-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) SERVA ONE LTD-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/2.59.183.77-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) OVHcloud-(Tls)-(VL)-4
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/194.76.173.176-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) KT-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/121.154.68.40-34005
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.207.234-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (CH) Datasource-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/176.10.125.114-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/85.192.41.100-7769
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Servers Tech Fzco-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/77.238.226.178-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-17
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/147.45.76.158-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-42
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/141.95.161.241-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Amazon.com-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/204.110.223.105-80
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-43
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.112.195.147-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-44
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/109.176.244.202-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-12
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.189.187-3030
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-13
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/95.216.148.189-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Scalaxy-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/38.180.96.139-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/85.192.29.136-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) LLC Baxet-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.135.135.131-4433
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) OVHcloud-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/86.110.56.171-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Digital Ocean-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/138.68.124.200-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) OVHcloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/104.234.50.232-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-14
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.207.234-8738
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) ColoCrossing-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/107.172.103.195-16074
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) Yandex.Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.169.160.84-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (JP) Oracle Cloud-(Tls)-(VL)-5
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/140.83.83.229-14829
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) OVHcloud-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/86.110.56.70-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-45
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.112.195.13-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Alibaba-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/47.253.87.21-52315
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Amazon.com-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/44.228.63.60-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) Vultr-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/158.247.250.157-81
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-46
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/54.37.64.120-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-47
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/162.19.253.47-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-48
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/188.165.2.84-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TW) Akile-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/37.128.252.196-8080
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (VN) Maxserver Company-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/103.98.149.96-58904
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) ColoCrossing-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/192.210.143.111-28425
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-49
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/162.19.247.245-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SG) Neapol Group Ltd-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/194.36.178.36-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-50
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/109.176.244.135-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) OVHcloud-(Tls)-(VL)-5
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/195.206.242.19-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Alexhost-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/46.253.4.186-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-18
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/147.45.74.3-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (LV) Sia Veesp-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.34.209.231-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Global Connectivity Solutions Llp-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/81.19.139.193-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TW) Akari Networks-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/188.253.6.210-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.75.210.206-44158
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) KT-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/61.80.99.5-32941
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Miglovets Egor Andreevich-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/193.37.70.98-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) G-Core Labs SA-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.8.93.45-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-51
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.23.168.201-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TR) Ultahost-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/188.132.129.84-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (LV) Sia Veesp-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/188.253.18.111-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-12
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/77.91.77.116-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Multacom Corporation-(Tls)-(VL)-4
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/148.135.111.27-26364
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hostkey-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/193.84.2.14-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Aeza International-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/176.124.206.150-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (RU) VDSina.com-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/62.113.118.4-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) HosTeam-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/31.133.0.135-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) OVHcloud-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/195.206.242.193-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (LV) Sia Veesp-(Tls)-(VL)-8
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/195.135.252.144-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (HK) Akile-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/85.208.104.34-8080
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) Newserverlife-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/45.144.48.186-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SE) Aeza International-(Tls)-(VL)-19
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.228.163.103-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-52
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/146.103.49.99-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Baxet Group Inc.-(Tls)-(VL)-2
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/91.149.239.62-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Iron Hosting Centre-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/46.30.43.144-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (JP) Oracle Cloud-(Tls)-(VL)-6
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/150.230.7.216-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) LG Uplus-(Tls)-(VL)-5
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/61.36.58.170-30047
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) OVHcloud-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/86.110.56.131-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (LV) Sia Veesp-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/195.135.252.41-10000
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Servers Tech Fzco-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/194.60.132.179-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SG) Digital Ocean-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/143.198.196.196-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Multacom Corporation-(Tls)-(VL)-5
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/142.171.53.195-58204
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-15
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.108.159.173-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Serva One-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/81.22.132.215-18247
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (LV) Sia Veesp-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/46.32.184.115-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) OVHcloud-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/213.218.238.215-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) SK Broadband-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/1.249.4.71-50002
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-53
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/51.38.152.67-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Baxet Group Inc.-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/47.90.141.204-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-54
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/51.195.249.231-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (HK) Alibaba-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/8.217.45.219-42291
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-9
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/168.119.247.199-2052
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (PL) HosTeam-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/31.133.0.133-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (AT) Aeza International-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.106.94.67-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/23.88.112.241-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) Amazon.com-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/52.56.191.132-8081
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) Fairchild Imagination Co.-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/149.5.52.148-587
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) IT7 Networks-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/138.128.222.154-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Hostwinds LLC.-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/192.236.249.90-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-55
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/51.195.119.76-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (ES) Stark Industries Solutions-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/185.231.204.186-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Servers Tech Fzco-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.110.78.173-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Servers Tech Fzco-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.110.100.110-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) TalkTalk-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/89.168.68.57-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-56
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/92.222.24.127-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) OVHcloud-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/77.81.138.172-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) IT7 Networks-(Tls)-(VL)-4
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/66.112.212.21-818
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (SG) Green Floid-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.34.176.119-81
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) TimeWeb-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/147.45.135.207-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-16
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.202.208-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/49.12.78.78-2087
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) OVHcloud-(Tls)-(VL)-57
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/51.75.149.44-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (JP) Oracle Cloud-(Tls)-(VL)-7
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/138.2.32.76-15821
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Hetzner Online-(Tls)-(VL)-17
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/65.109.238.131-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (NL) Aeza International-(Tls)-(VL)-13
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/109.237.98.214-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (KR) KT-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/221.161.58.134-23449
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) Zhouyisat-communications-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/193.17.183.157-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GB) OVHcloud-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/91.199.32.15-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FR) CGI GLOBAL LIMITED-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/95.182.96.14-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (FI) Global Connectivity Solutions Llp-(Tls)-(VL)-3
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/81.19.139.193-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) ColoCrossing-(Tls)-(VL)-10
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/107.172.103.195-16043
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hostkey-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/194.247.187.181-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (TW) Chunghwa Telecom-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/60.249.114.181-21574
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (GR) TimeWeb-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/94.241.174.207-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) ColoCrossing-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/107.172.97.143-50150
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-12
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/116.202.190.172-8443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (DE) Hetzner Online-(Tls)-(VL)-13
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/142.132.140.130-451
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (LV) Sia Veesp-(Tls)-(VL)-11
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/5.34.209.189-2053
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (US) IT7 Networks-(Tls)-(VL)-5
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/104.243.23.10-22085
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
+- name: (IN) Google Cloud-(Tls)-(VL)-1
+  server: frelance.biz.id
+  port: 443
+  type: vless
+  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  cipher: auto
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  servername: frelance.biz.id
+  alpn:
+  - h2
+  - h3
+  - http/1.1
+  ws-opts:
+    path: /Aryyathy-Mode/35.200.238.235-443
+    headers:
+      Host: frelance.biz.id
+    max-early-data: 0
+    early-data-header-name: Sec-WebSocket-Protocol
+    ip-version: dual
+    v2ray-http-upgrade: false
+    v2ray-http-upgrade-fast-open: false
