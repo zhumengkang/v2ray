@@ -1,0 +1,897 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from __future__ import print_function
+import os
+import sys
+import platform
+import subprocess
+import json
+import random
+import time
+import shutil
+import re
+
+try:
+    # Python 3
+    import base64
+    import uuid as uuid_lib
+    from pathlib import Path
+except ImportError:
+    # Python 2
+    import base64
+    import uuid as uuid_lib
+    try:
+        from pathlib2 import Path
+    except ImportError:
+        print("请安装 pathlib2: pip install pathlib2")
+        sys.exit(1)
+
+try:
+    # Python 3
+    from crontab import CronTab
+except ImportError:
+    try:
+        # 尝试为Python 2安装
+        subprocess.call([sys.executable, "-m", "pip", "install", "python-crontab"])
+        from crontab import CronTab
+    except:
+        print("请安装 python-crontab: pip install python-crontab")
+        sys.exit(1)
+
+try:
+    # Python 3
+    import requests
+except ImportError:
+    try:
+        # 尝试为Python 2安装
+        subprocess.call([sys.executable, "-m", "pip", "install", "requests"])
+        import requests
+    except:
+        print("请安装 requests: pip install requests")
+        sys.exit(1)
+
+# 全局变量
+INSTALL_DIR = Path.home() / ".agsb"  # 使用用户主目录下的隐藏文件夹，避免root权限
+CONFIG_FILE = INSTALL_DIR / "config.json"
+SB_PID_FILE = INSTALL_DIR / "sbpid.log"
+ARGO_PID_FILE = INSTALL_DIR / "sbargopid.log"
+LIST_FILE = INSTALL_DIR / "list.txt"
+LOG_FILE = INSTALL_DIR / "argo.log"
+
+# 打印脚本信息
+def print_info():
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("甬哥Github项目  ：github.com/yonggekkk")
+    print("甬哥Blogger博客 ：ygkkk.blogspot.com")
+    print("甬哥YouTube频道 ：www.youtube.com/@ygkkk")
+    print("ArgoSB Python版真一键无交互脚本")
+    print("当前版本：25.5.25 Python版")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+# 检查系统类型
+def check_system():
+    system = platform.system()
+    if system != "Linux":
+        print("脚本仅支持Linux系统")
+        sys.exit(1)
+    
+    # 检查CPU架构
+    machine = platform.machine()
+    if machine == "aarch64":
+        return "arm64"
+    elif machine == "x86_64":
+        return "amd64"
+    else:
+        print("目前脚本不支持{}架构".format(machine))
+        sys.exit(1)
+
+# 检测虚拟化环境
+def check_virtualization():
+    try:
+        return subprocess.check_output("systemd-detect-virt 2>/dev/null || virt-what 2>/dev/null", shell=True).decode().strip()
+    except:
+        return ""
+
+# 检查crontab是否存在
+def is_crontab_available():
+    try:
+        result = subprocess.run("which crontab", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        return result.returncode == 0
+    except:
+        return False
+
+# 创建自启动脚本
+def create_startup_script():
+    try:
+        # 创建自启动目录
+        startup_dir = Path.home() / ".config/autostart"
+        if not startup_dir.exists():
+            os.makedirs(str(startup_dir), exist_ok=True)
+            
+        # 创建启动sing-box的脚本
+        sb_startup_script = INSTALL_DIR / "start_sb.sh"
+        with open(str(sb_startup_script), 'w') as f:
+            f.write("#!/bin/bash\n")
+            f.write("cd {}\n".format(INSTALL_DIR))
+            f.write("./sing-box run -c sb.json > /dev/null 2>&1 & echo $! > sbpid.log\n")
+        os.chmod(str(sb_startup_script), 0o755)
+        
+        # 创建启动cloudflared的脚本
+        cf_startup_script = INSTALL_DIR / "start_cf.sh"
+        
+        # 检查是否有固定隧道配置
+        argo_token_file = INSTALL_DIR / "sbargotoken.log"
+        if argo_token_file.exists():
+            with open(str(cf_startup_script), 'w') as f:
+                f.write("#!/bin/bash\n")
+                f.write("cd {}\n".format(INSTALL_DIR))
+                f.write("./cloudflared tunnel --no-autoupdate --edge-ip-version auto --protocol http2 run --token $(cat sbargotoken.log) > /dev/null 2>&1 & echo $! > sbargopid.log\n")
+        else:
+            # 使用临时隧道配置
+            sb_json_file = INSTALL_DIR / "sb.json"
+            with open(str(sb_json_file), 'r') as f:
+                data = json.load(f)
+                port = data["inbounds"][0]["listen_port"]
+                
+            with open(str(cf_startup_script), 'w') as f:
+                f.write("#!/bin/bash\n")
+                f.write("cd {}\n".format(INSTALL_DIR))
+                f.write("./cloudflared tunnel --url http://localhost:{} --edge-ip-version auto --no-autoupdate --protocol http2 > argo.log 2>&1 & echo $! > sbargopid.log\n".format(port))
+        
+        os.chmod(str(cf_startup_script), 0o755)
+        
+        # 创建桌面环境自启动配置
+        desktop_file = startup_dir / "agsb.desktop"
+        with open(str(desktop_file), 'w') as f:
+            f.write("[Desktop Entry]\n")
+            f.write("Type=Application\n")
+            f.write("Name=ArgoSB\n")
+            f.write("Exec=bash -c 'cd {} && ./start_sb.sh && ./start_cf.sh'\n".format(INSTALL_DIR))
+            f.write("Terminal=false\n")
+            f.write("X-GNOME-Autostart-enabled=true\n")
+        
+        # 添加到用户的.profile文件中
+        profile_file = Path.home() / ".profile"
+        bashrc_file = Path.home() / ".bashrc"
+        
+        startup_cmd = "\n# ArgoSB 自启动\nif [ -f {} ] && [ -f {} ]; then\n  {} && {}\nfi\n".format(
+            sb_startup_script, cf_startup_script, sb_startup_script, cf_startup_script
+        )
+        
+        # 添加到profile
+        if profile_file.exists():
+            with open(str(profile_file), 'r+') as f:
+                content = f.read()
+                if "ArgoSB 自启动" not in content:
+                    f.seek(0, 2)  # 移动到文件末尾
+                    f.write(startup_cmd)
+        
+        # 添加到bashrc
+        if bashrc_file.exists():
+            with open(str(bashrc_file), 'r+') as f:
+                content = f.read()
+                if "ArgoSB 自启动" not in content:
+                    f.seek(0, 2)  # 移动到文件末尾
+                    f.write(startup_cmd)
+        
+        print("已创建自启动脚本。脚本路径:")
+        print("- sing-box启动: {}".format(sb_startup_script))
+        print("- cloudflared启动: {}".format(cf_startup_script))
+        print("系统重启后，服务将自动启动")
+        
+        return True
+    except Exception as e:
+        print("创建自启动脚本出错: {}".format(e))
+        return False
+
+# 卸载脚本
+def uninstall():
+    try:
+        # 停止服务
+        try:
+            with open(str(SB_PID_FILE), 'r') as f:
+                pid = f.read().strip()
+                subprocess.run("kill -15 {}".format(pid), shell=True)
+        except (IOError, FileNotFoundError):
+            pass
+            
+        try:
+            with open(str(ARGO_PID_FILE), 'r') as f:
+                pid = f.read().strip()
+                subprocess.run("kill -15 {}".format(pid), shell=True)
+        except (IOError, FileNotFoundError):
+            pass
+        
+        # 如果有crontab，移除定时任务    
+        if is_crontab_available():
+            try:
+                cron = CronTab(user=True)
+                for job in cron.find_comment('sbpid'):
+                    cron.remove(job)
+                for job in cron.find_comment('sbargopid'):
+                    cron.remove(job)
+                cron.write()
+            except Exception as e:
+                print("移除crontab任务时出错，这可能是正常的，如果系统未安装crontab: {}".format(e))
+        
+        # 移除自启动配置
+        startup_file = Path.home() / ".config/autostart/agsb.desktop"
+        if startup_file.exists():
+            os.remove(str(startup_file))
+        
+        # 删除安装目录
+        if INSTALL_DIR.exists():
+            shutil.rmtree(str(INSTALL_DIR), ignore_errors=True)
+        
+        # 删除用户主目录下的可执行文件链接
+        user_bin_dir = Path.home() / "bin"
+        local_bin = user_bin_dir / "agsb"
+        if local_bin.exists():
+            os.remove(str(local_bin))
+            
+        print("卸载完成")
+    except Exception as e:
+        print("卸载过程中出错: {}".format(e))
+    
+    sys.exit(0)
+
+# 创建用户bin目录下的链接
+def create_user_bin_link():
+    try:
+        user_bin_dir = Path.home() / "bin"
+        # 如果用户的bin目录不存在，创建它
+        if not user_bin_dir.exists():
+            os.makedirs(str(user_bin_dir))
+            # 将bin目录添加到PATH环境变量
+            shell_rc_files = [
+                Path.home() / ".bashrc",
+                Path.home() / ".zshrc",
+                Path.home() / ".profile"
+            ]
+            
+            for rc_file in shell_rc_files:
+                if rc_file.exists():
+                    with open(str(rc_file), 'a') as f:
+                        f.write('\n# 添加用户bin目录到PATH\n')
+                        f.write('export PATH="$HOME/bin:$PATH"\n')
+        
+        # 创建脚本链接
+        script_path = Path(__file__).resolve()
+        link_path = user_bin_dir / "agsb"
+        
+        # 如果链接已存在，先删除
+        if link_path.exists():
+            os.remove(str(link_path))
+            
+        # 创建新链接
+        os.symlink(str(script_path), str(link_path))
+        os.chmod(str(link_path), 0o755)
+        
+        print("已在{0}创建命令链接，请确保{0}在您的PATH环境变量中".format(user_bin_dir))
+        print("您可以使用以下命令刷新环境变量：source ~/.bashrc")
+        print("之后可以直接使用'agsb'命令来操作")
+        
+        return True
+    except Exception as e:
+        print("创建用户bin目录链接失败: {}".format(e))
+        return False
+
+# 升级脚本
+def upgrade():
+    try:
+        response = requests.get("https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.py")
+        if response.status_code == 200:
+            script_path = Path(__file__).resolve()
+            with open(str(script_path), 'w', encoding='utf-8') as f:
+                f.write(response.text)
+            os.chmod(str(script_path), 0o755)
+            print("升级完成")
+        else:
+            print("升级失败，无法下载最新脚本")
+    except Exception as e:
+        print("升级过程中出错: {}".format(e))
+    
+    sys.exit(0)
+
+# 检查脚本运行状态
+def check_status():
+    try:
+        # 检查进程是否存在
+        sing_box_running = subprocess.run("pgrep -f 'sing-box'", shell=True, stdout=subprocess.PIPE).returncode == 0
+        cloudflared_running = subprocess.run("pgrep -f 'cloudflared'", shell=True, stdout=subprocess.PIPE).returncode == 0
+        
+        if sing_box_running and cloudflared_running and LIST_FILE.exists():
+            print("ArgoSB脚本已在运行中")
+            
+            argo_name_file = INSTALL_DIR / "sbargoym.log"
+            if argo_name_file.exists():
+                argoname = argo_name_file.read_text().strip()
+                print("当前argo固定域名：{}".format(argoname))
+                
+                token_file = INSTALL_DIR / "sbargotoken.log"
+                if token_file.exists():
+                    print("当前argo固定域名token：{}".format(token_file.read_text().strip()))
+            else:
+                # 读取临时域名
+                if LOG_FILE.exists():
+                    with open(str(LOG_FILE), 'r') as f:
+                        log_content = f.read()
+                    domain_match = re.search(r'https://([a-zA-Z0-9\-]+\.trycloudflare\.com)', log_content)
+                    if domain_match:
+                        argodomain = domain_match.group(1)
+                        print("当前argo最新临时域名：{}".format(argodomain))
+                    else:
+                        print("当前argo临时域名未生成，请先将脚本卸载(python agsb.py del)，再重新安装ArgoSB脚本")
+            
+            # 显示节点信息
+            if LIST_FILE.exists():
+                with open(str(LIST_FILE), 'r') as f:
+                    print(f.read())
+            
+            return True
+        elif not sing_box_running and not cloudflared_running:
+            return False
+        else:
+            print("ArgoSB脚本状态异常，建议卸载后重新安装")
+            return False
+    except Exception as e:
+        print("检查状态时出错: {}".format(e))
+        return False
+
+# 获取sing-box最新版本
+def get_latest_singbox_version():
+    try:
+        # 尝试通过GitHub API直接获取最新版本
+        response = requests.get("https://api.github.com/repos/SagerNet/sing-box/releases/latest")
+        if response.status_code == 200:
+            data = response.json()
+            return data["tag_name"].lstrip("v")  # 去掉版本号前面的v
+    except Exception as e:
+        print("获取sing-box版本信息出错，尝试备用方式: {}".format(e))
+    
+    # 备用方式：直接访问GitHub页面
+    try:
+        response = requests.get("https://github.com/SagerNet/sing-box/releases/latest")
+        if response.status_code == 200:
+            # 从重定向URL中提取版本号
+            redirect_url = response.url
+            version_match = re.search(r'/v([0-9\.]+)$', redirect_url)
+            if version_match:
+                return version_match.group(1)
+    except Exception as e:
+        print("备用获取sing-box版本信息出错: {}".format(e))
+    
+    # 如果都失败了，使用一个固定版本
+    print("无法获取最新版本，使用固定版本 1.5.1")
+    return "1.5.1"
+
+# 获取cloudflared最新版本
+def get_latest_cloudflared_version():
+    try:
+        # 尝试通过GitHub API直接获取最新版本
+        response = requests.get("https://api.github.com/repos/cloudflare/cloudflared/releases/latest")
+        if response.status_code == 200:
+            data = response.json()
+            return data["tag_name"]
+    except Exception as e:
+        print("获取cloudflared版本信息出错，尝试备用方式: {}".format(e))
+    
+    # 备用方式：直接访问GitHub页面
+    try:
+        response = requests.get("https://github.com/cloudflare/cloudflared/releases/latest")
+        if response.status_code == 200:
+            # 从重定向URL中提取版本号
+            redirect_url = response.url
+            version_match = re.search(r'/([0-9\.]+)$', redirect_url)
+            if version_match:
+                return version_match.group(1)
+    except Exception as e:
+        print("备用获取cloudflared版本信息出错: {}".format(e))
+    
+    # 如果都失败了，不显示版本信息
+    return "最新版"
+
+# 下载 sing-box
+def download_sing_box(cpu_arch):
+    # 创建安装目录
+    if not INSTALL_DIR.exists():
+        os.makedirs(str(INSTALL_DIR))
+    
+    # 获取最新版本
+    sbcore = get_latest_singbox_version()
+    
+    sbname = "sing-box-{}-linux-{}".format(sbcore, cpu_arch)
+    print("下载sing-box最新正式版内核：{}".format(sbcore))
+    
+    # 下载并解压
+    download_url = "https://github.com/SagerNet/sing-box/releases/download/v{}/{}".format(sbcore, sbname) + ".tar.gz"
+    print("下载地址: {}".format(download_url))
+    
+    try:
+        response = requests.get(download_url, stream=True)
+        if response.status_code != 200:
+            print("下载失败，HTTP状态码: {}".format(response.status_code))
+            sys.exit(1)
+            
+        tar_path = INSTALL_DIR / "sing-box.tar.gz"
+        
+        with open(str(tar_path), 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        
+        # 解压文件
+        extract_cmd = "tar xzf {} -C {}".format(tar_path, INSTALL_DIR)
+        print("执行解压命令: {}".format(extract_cmd))
+        result = subprocess.run(extract_cmd, shell=True)
+        if result.returncode != 0:
+            print("解压失败，尝试备用方法")
+            # 备用解压方法
+            import tarfile
+            tar = tarfile.open(str(tar_path))
+            tar.extractall(path=str(INSTALL_DIR))
+            tar.close()
+        
+        # 移动并清理
+        box_path = INSTALL_DIR / sbname / "sing-box"
+        dest_path = INSTALL_DIR / "sing-box"
+        if box_path.exists():
+            shutil.move(str(box_path), str(dest_path))
+            shutil.rmtree(str(INSTALL_DIR / sbname), ignore_errors=True)
+        else:
+            print("解压后找不到sing-box文件，检查目录结构")
+            # 尝试查找sing-box可执行文件
+            for root, dirs, files in os.walk(str(INSTALL_DIR)):
+                if "sing-box" in files:
+                    sing_box_path = os.path.join(root, "sing-box")
+                    shutil.move(sing_box_path, str(dest_path))
+                    print("找到并移动sing-box文件")
+                    break
+        
+        os.remove(str(tar_path))
+        
+        # 设置执行权限
+        os.chmod(str(INSTALL_DIR / "sing-box"), 0o755)
+    except Exception as e:
+        print("下载sing-box过程中出错: {}".format(e))
+        sys.exit(1)
+
+# 下载 cloudflared
+def download_cloudflared(cpu_arch):
+    # 获取最新版本
+    argocore = get_latest_cloudflared_version()
+    
+    print("下载cloudflared-argo最新正式版内核：{}".format(argocore))
+    
+    # 下载
+    download_url = "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-{}".format(cpu_arch)
+    print("下载地址: {}".format(download_url))
+    
+    try:
+        response = requests.get(download_url)
+        if response.status_code != 200:
+            print("下载失败，HTTP状态码: {}".format(response.status_code))
+            sys.exit(1)
+            
+        with open(str(INSTALL_DIR / "cloudflared"), 'wb') as f:
+            f.write(response.content)
+        
+        # 设置执行权限
+        os.chmod(str(INSTALL_DIR / "cloudflared"), 0o755)
+    except Exception as e:
+        print("下载cloudflared过程中出错: {}".format(e))
+        sys.exit(1)
+
+# 创建 sing-box 配置
+def create_sing_box_config(port_vm_ws, uuid_str):
+    config = {
+        "log": {
+            "disabled": False,
+            "level": "info",
+            "timestamp": True
+        },
+        "inbounds": [
+            {
+                "type": "vmess",
+                "tag": "vmess-sb",
+                "listen": "::",
+                "listen_port": port_vm_ws,
+                "users": [
+                    {
+                        "uuid": uuid_str,
+                        "alterId": 0
+                    }
+                ],
+                "transport": {
+                    "type": "ws",
+                    "path": "{}-vm".format(uuid_str),
+                    "max_early_data": 2048,
+                    "early_data_header_name": "Sec-WebSocket-Protocol"
+                },
+                "tls": {
+                    "enabled": False,
+                    "server_name": "www.bing.com",
+                    "certificate_path": "{}/cert.pem".format(INSTALL_DIR),
+                    "key_path": "{}/private.key".format(INSTALL_DIR)
+                }
+            }
+        ],
+        "outbounds": [
+            {
+                "type": "direct",
+                "tag": "direct"
+            }
+        ]
+    }
+    
+    with open(str(INSTALL_DIR / "sb.json"), 'w') as f:
+        json.dump(config, f, indent=2)
+
+# 启动 sing-box
+def start_sing_box():
+    try:
+        process = subprocess.Popen(
+            [str(INSTALL_DIR / "sing-box"), "run", "-c", str(INSTALL_DIR / "sb.json")],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
+        
+        with open(str(SB_PID_FILE), 'w') as f:
+            f.write(str(process.pid))
+        
+        # 如果crontab可用，添加启动项到crontab
+        if is_crontab_available():
+            try:
+                cron = CronTab(user=True)
+                job = cron.new(command="{}/sing-box run -c {}/sb.json > /dev/null 2>&1 & echo $! > {}".format(
+                    INSTALL_DIR, INSTALL_DIR, SB_PID_FILE))
+                job.every_reboot()
+                job.set_comment("sbpid")
+                cron.write()
+            except Exception as e:
+                print("添加sing-box到crontab出错，将使用备用启动方式: {}".format(e))
+                # 使用备用的启动脚本
+                create_startup_script()
+        else:
+            # 如果没有crontab，使用其他方式创建自启动
+            create_startup_script()
+        
+        return True
+    except Exception as e:
+        print("启动sing-box失败: {}".format(e))
+        return False
+
+# 启动 cloudflared (Argo)
+def start_cloudflared(port_vm_ws, argo_domain=None, argo_auth=None):
+    try:
+        if argo_domain and argo_auth:
+            name = '固定'
+            process = subprocess.Popen(
+                [str(INSTALL_DIR / "cloudflared"), "tunnel", "--no-autoupdate", "--edge-ip-version", "auto", 
+                "--protocol", "http2", "run", "--token", argo_auth],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+            
+            with open(str(ARGO_PID_FILE), 'w') as f:
+                f.write(str(process.pid))
+            
+            with open(str(INSTALL_DIR / "sbargoym.log"), 'w') as f:
+                f.write(argo_domain)
+            
+            with open(str(INSTALL_DIR / "sbargotoken.log"), 'w') as f:
+                f.write(argo_auth)
+        else:
+            name = '临时'
+            process = subprocess.Popen(
+                [str(INSTALL_DIR / "cloudflared"), "tunnel", "--url", "http://localhost:{}".format(port_vm_ws), 
+                "--edge-ip-version", "auto", "--no-autoupdate", "--protocol", "http2"],
+                stdout=open(str(LOG_FILE), 'w'),
+                stderr=subprocess.STDOUT
+            )
+            
+            with open(str(ARGO_PID_FILE), 'w') as f:
+                f.write(str(process.pid))
+        
+        print("申请Argo{}隧道中……请稍等".format(name))
+        time.sleep(8)
+        
+        # 如果crontab可用，添加启动项到crontab
+        if is_crontab_available():
+            try:
+                cron = CronTab(user=True)
+                
+                if argo_domain and argo_auth:
+                    cmd = "{}/cloudflared tunnel --no-autoupdate --edge-ip-version auto --protocol http2 run --token $(cat {}/sbargotoken.log) > /dev/null 2>&1 & echo $! > {}".format(
+                        INSTALL_DIR, INSTALL_DIR, ARGO_PID_FILE)
+                else:
+                    cmd = "{}/cloudflared tunnel --url http://localhost:{} --edge-ip-version auto --no-autoupdate --protocol http2 > {} 2>&1 & echo $! > {}".format(
+                        INSTALL_DIR, port_vm_ws, LOG_FILE, ARGO_PID_FILE)
+                
+                job = cron.new(command=cmd)
+                job.every_reboot()
+                job.set_comment("sbargopid")
+                cron.write()
+            except Exception as e:
+                print("添加cloudflared到crontab出错，将使用备用启动方式: {}".format(e))
+                # 使用备用启动脚本 (已在start_sing_box中创建)
+        
+        # 获取域名
+        if argo_domain and argo_auth:
+            return argo_domain
+        else:
+            # 等待日志文件生成，最多等待30秒
+            for i in range(30):
+                time.sleep(1)
+                if LOG_FILE.exists():
+                    with open(str(LOG_FILE), 'r') as f:
+                        log_content = f.read()
+                    domain_match = re.search(r'https://([a-zA-Z0-9\-]+\.trycloudflare\.com)', log_content)
+                    if domain_match:
+                        return domain_match.group(1)
+        
+        return None
+    except Exception as e:
+        print("启动cloudflared失败: {}".format(e))
+        return None
+
+# 生成节点链接
+def generate_links(uuid_str, argodomain, hostname):
+    links = []
+    
+    # vmess-ws-tls-argo
+    config1 = {
+        "v": "2", "ps": "vmess-ws-tls-argo-{}-443".format(hostname), "add": "104.16.0.0", "port": "443",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": "tls", "sni": argodomain,
+        "alpn": "", "fp": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config1).encode()).decode()))
+    
+    config2 = {
+        "v": "2", "ps": "vmess-ws-tls-argo-{}-8443".format(hostname), "add": "104.17.0.0", "port": "8443",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": "tls", "sni": argodomain,
+        "alpn": "", "fp": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config2).encode()).decode()))
+    
+    config3 = {
+        "v": "2", "ps": "vmess-ws-tls-argo-{}-2053".format(hostname), "add": "104.18.0.0", "port": "2053",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": "tls", "sni": argodomain,
+        "alpn": "", "fp": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config3).encode()).decode()))
+    
+    config4 = {
+        "v": "2", "ps": "vmess-ws-tls-argo-{}-2083".format(hostname), "add": "104.19.0.0", "port": "2083",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": "tls", "sni": argodomain,
+        "alpn": "", "fp": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config4).encode()).decode()))
+    
+    config5 = {
+        "v": "2", "ps": "vmess-ws-tls-argo-{}-2087".format(hostname), "add": "104.20.0.0", "port": "2087",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": "tls", "sni": argodomain,
+        "alpn": "", "fp": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config5).encode()).decode()))
+    
+    config6 = {
+        "v": "2", "ps": "vmess-ws-tls-argo-{}-2096".format(hostname), "add": "[2606:4700::]", "port": "2096",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": "tls", "sni": argodomain,
+        "alpn": "", "fp": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config6).encode()).decode()))
+    
+    # 非TLS配置
+    config7 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-80".format(hostname), "add": "104.21.0.0", "port": "80",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config7).encode()).decode()))
+    
+    config8 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-8080".format(hostname), "add": "104.22.0.0", "port": "8080",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config8).encode()).decode()))
+    
+    config9 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-8880".format(hostname), "add": "104.24.0.0", "port": "8880",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config9).encode()).decode()))
+    
+    config10 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-2052".format(hostname), "add": "104.25.0.0", "port": "2052",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config10).encode()).decode()))
+    
+    config11 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-2082".format(hostname), "add": "104.26.0.0", "port": "2082",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config11).encode()).decode()))
+    
+    config12 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-2086".format(hostname), "add": "104.27.0.0", "port": "2086",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config12).encode()).decode()))
+    
+    config13 = {
+        "v": "2", "ps": "vmess-ws-argo-{}-2095".format(hostname), "add": "[2400:cb00:2049::]", "port": "2095",
+        "id": uuid_str, "aid": "0", "scy": "auto", "net": "ws", "type": "none",
+        "host": argodomain, "path": "/{}-vm?ed=2048".format(uuid_str), "tls": ""
+    }
+    links.append("vmess://{}".format(base64.b64encode(json.dumps(config13).encode()).decode()))
+    
+    return links
+
+# 保存链接到文件
+def save_links(links, port_vm_ws, argodomain):
+    with open(str(INSTALL_DIR / "jh.txt"), 'w') as f:
+        for link in links:
+            f.write("{}\n".format(link))
+    
+    baseurl = base64.b64encode("\n".join(links).encode()).decode()
+    
+    with open(str(LIST_FILE), 'w') as f:
+        f.write("---------------------------------------------------------\n")
+        f.write("---------------------------------------------------------\n")
+        f.write("Vmess主协议端口(Argo固定隧道端口)：{}\n".format(port_vm_ws))
+        f.write("---------------------------------------------------------\n")
+        f.write("单节点配置输出：\n")
+        
+        # TLS节点
+        f.write("1、443端口的vmess-ws-tls-argo节点，默认优选IPV4：104.16.0.0\n")
+        f.write("{}\n\n".format(links[0]))
+        
+        f.write("2、8443端口的vmess-ws-tls-argo节点，默认优选IPV4：104.17.0.0\n")
+        f.write("{}\n\n".format(links[1]))
+        
+        f.write("3、2053端口的vmess-ws-tls-argo节点，默认优选IPV4：104.18.0.0\n")
+        f.write("{}\n\n".format(links[2]))
+        
+        f.write("4、2083端口的vmess-ws-tls-argo节点，默认优选IPV4：104.19.0.0\n")
+        f.write("{}\n\n".format(links[3]))
+        
+        f.write("5、2087端口的vmess-ws-tls-argo节点，默认优选IPV4：104.20.0.0\n")
+        f.write("{}\n\n".format(links[4]))
+        
+        f.write("6、2096端口的vmess-ws-tls-argo节点，默认优选IPV6：[2606:4700::]\n")
+        f.write("{}\n\n".format(links[5]))
+        
+        # 非TLS节点
+        f.write("7、80端口的vmess-ws-argo节点，默认优选IPV4：104.21.0.0\n")
+        f.write("{}\n\n".format(links[6]))
+        
+        f.write("8、8080端口的vmess-ws-argo节点，默认优选IPV4：104.22.0.0\n")
+        f.write("{}\n\n".format(links[7]))
+        
+        f.write("9、8880端口的vmess-ws-argo节点，默认优选IPV4：104.24.0.0\n")
+        f.write("{}\n\n".format(links[8]))
+        
+        f.write("10、2052端口的vmess-ws-argo节点，默认优选IPV4：104.25.0.0\n")
+        f.write("{}\n\n".format(links[9]))
+        
+        f.write("11、2082端口的vmess-ws-argo节点，默认优选IPV4：104.26.0.0\n")
+        f.write("{}\n\n".format(links[10]))
+        
+        f.write("12、2086端口的vmess-ws-argo节点，默认优选IPV4：104.27.0.0\n")
+        f.write("{}\n\n".format(links[11]))
+        
+        f.write("13、2095端口的vmess-ws-argo节点，默认优选IPV6：[2400:cb00:2049::]\n")
+        f.write("{}\n\n".format(links[12]))
+        
+        f.write("---------------------------------------------------------\n")
+        f.write("聚合节点配置输出：\n")
+        f.write("14、Argo节点13个端口及不死IP全覆盖：7个关tls 80系端口节点、6个开tls 443系端口节点\n\n")
+        f.write("{}\n\n".format(baseurl))
+        f.write("---------------------------------------------------------\n")
+        f.write("相关快捷方式如下：\n")
+        f.write("显示域名及节点信息：agsb 或 python agsb.py\n")
+        f.write("升级脚本：agsb up 或 python agsb.py up\n")
+        f.write("卸载脚本：agsb del 或 python agsb.py del\n")
+        f.write("---------------------------------------------------------\n")
+
+# 主函数
+def main():
+    print_info()
+    
+    # 解析命令行参数
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "del":
+            uninstall()
+        elif sys.argv[1] == "up":
+            upgrade()
+    
+    # 检查脚本是否已经运行
+    try:
+        if check_status():
+            sys.exit(0)
+    except Exception as e:
+        print("检查状态时出错: {}".format(e))
+        print("继续安装过程...")
+    
+    print("VPS系统：{}".format(platform.platform()))
+    cpu_arch = check_system()
+    print("CPU架构：{}".format(cpu_arch))
+    print("ArgoSB脚本未安装，开始安装…………")
+    time.sleep(3)
+    
+    # 检查crontab是否可用
+    has_crontab = is_crontab_available()
+    if not has_crontab:
+        print("系统未安装crontab，将使用备用方法创建自启动脚本")
+    
+    # 创建安装目录
+    if not INSTALL_DIR.exists():
+        os.makedirs(str(INSTALL_DIR))
+    
+    # 设置随机端口和UUID
+    if os.environ.get('vmpt'):
+        port_vm_ws = int(os.environ.get('vmpt'))
+    else:
+        port_vm_ws = random.randint(10000, 65535)
+    
+    if os.environ.get('uuid'):
+        uuid_str = os.environ.get('uuid')
+    else:
+        uuid_str = str(uuid_lib.uuid4())
+    
+    # 下载必要的组件
+    download_sing_box(cpu_arch)
+    download_cloudflared(cpu_arch)
+    
+    # 创建配置
+    create_sing_box_config(port_vm_ws, uuid_str)
+    
+    # 启动sing-box
+    if not start_sing_box():
+        print("启动sing-box失败，退出安装")
+        uninstall()
+        sys.exit(1)
+    
+    # 环境变量中配置的Argo固定域名和密钥
+    argo_domain = os.environ.get('agn')
+    argo_auth = os.environ.get('agk')
+    
+    # 启动cloudflared
+    argodomain = start_cloudflared(port_vm_ws, argo_domain, argo_auth)
+    
+    if argodomain:
+        print("Argo{}隧道申请成功，域名为：{}".format('固定' if argo_domain else '临时', argodomain))
+    else:
+        print("Argo隧道申请失败，请稍后再试")
+        uninstall()
+        sys.exit(1)
+    
+    # 生成节点链接
+    hostname = platform.node()
+    links = generate_links(uuid_str, argodomain, hostname)
+    
+    # 保存链接到文件
+    save_links(links, port_vm_ws, argodomain)
+    
+    # 创建用户bin目录下的链接
+    create_user_bin_link()
+    
+    print("ArgoSB脚本安装完毕")
+    with open(str(LIST_FILE), 'r') as f:
+        print(f.read())
+
+if __name__ == "__main__":
+    main() 
